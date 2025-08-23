@@ -1,8 +1,7 @@
-import Plant from "/about/plant.svg"
-import Tractor from "/about/tractor.svg"
-import Arrow from "/about/arrow.svg"
-import Plate from "/about/Plate.png"
-
+import Plant from "../../assets/img/about/plant.svg";
+import Tractor from "../../assets/img/about/tractor.svg";
+import Arrow from "../../assets/img/about/arrow.svg";
+import Plate from "../../assets/img/about/plate.png";
 
 export const AboutUsAboutUs = () => {
 

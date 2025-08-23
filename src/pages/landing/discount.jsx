@@ -1,5 +1,5 @@
-import DiscountImageBlock1 from '/discount-image-block1.png'
-import DiscountImageBlock2 from '/discount-image-block2.png'
+import DiscountImageBlock1 from '../../assets/img/discount/discount-image1.png';
+import DiscountImageBlock2 from '../../assets/img/discount/discount-image2.png';
 
 export const DiscountLanding = () => {
     return (

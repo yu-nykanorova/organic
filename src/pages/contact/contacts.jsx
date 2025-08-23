@@ -1,11 +1,10 @@
-import ContactTitleBlockImage from '/contact-image1.jpg'
-import ContactMessage from '/contact-message.svg'
-import ContactPhone from '/contact-phone.svg'
-
-import ContactInstagram from '/contact-inst.svg'
-import ContactFacebook from '/contact-facebook.svg'
-import ContactTwitter from '/contact-twitter.svg'
-import ContactPinterest from '/contact-pinterest.svg'
+import ContactTitleBlockImage from '../../assets/img/contacts/contact-image1.jpg';
+import ContactMessage from '../../assets/img/contacts/contact-message.svg';
+import ContactPhone from '../../assets/img/contacts/contact-phone.svg';
+import ContactInstagram from '../../assets/img/contacts/contact-inst.svg';
+import ContactFacebook from '../../assets/img/contacts/contact-facebook.svg';
+import ContactTwitter from '../../assets/img/contacts/contact-twitter.svg';
+import ContactPinterest from '../../assets/img/contacts/contact-pinterest.svg';
 
 export const ContactsContactUs = () => {
     return (

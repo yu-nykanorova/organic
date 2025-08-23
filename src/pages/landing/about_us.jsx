@@ -1,6 +1,7 @@
-import Food from "/about/food.svg"
-import Mailbox from "/about/mailbox.svg"
-import Arrow from "/about/arrow.svg"
+import Food from "../../assets/img/about/food.svg";
+import Mailbox from "../../assets/img/about/mailbox.svg";
+import Arrow from "../../assets/img/about/arrow.svg";
+
 export const AboutUsLanding = () => {
   return (
     <div className="about__container">

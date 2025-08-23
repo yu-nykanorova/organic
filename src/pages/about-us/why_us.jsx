@@ -1,9 +1,10 @@
-import { Ellipse } from "../../shared/icons/ellipse"
-import AboutWhyUsImage from "/public/about_why-us-photo.jpg";
-import AboutWhyUsReturnIcon from "/public/about_why-us_return-icon.svg";
-import AboutWhyUsFreshIcon from "/public/about_why-us_fresh-icon.svg";
-import AboutWhyUsSecuredIcon from "/public/about_why-us_secured-icon.svg";
-import AboutWhyUsSupportIcon from "/public/about_why-us_support-icon.svg";
+import { Ellipse } from "../../shared/icons/ellipse";
+import AboutWhyUsImage from "../../assets/img/about/about_why-us-photo.jpg";
+import AboutWhyUsReturnIcon from "../../assets/img/about/about_why-us_return-icon.svg";
+import AboutWhyUsFreshIcon from "../../assets/img/about/about_why-us_fresh-icon.svg";
+import AboutWhyUsSecuredIcon from "../../assets/img/about/about_why-us_secured-icon.svg";
+import AboutWhyUsSupportIcon from "../../assets/img/about/about_why-us_support-icon.svg";
+
 export const WhyUsAboutUs = () => {
     return (
       <div className="why-us">

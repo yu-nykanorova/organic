@@ -1,8 +1,8 @@
-import { FarmsContactUs } from "./farms"
-import { FormContactUs } from "./form"
-import { ContactsContactUs } from "./contacts"
-import { CommonBanner } from "../../shared/banner"
-import ContactBanner from "/banners/contact-bg.jpg"
+import { FarmsContactUs } from "./farms";
+import { FormContactUs } from "./form";
+import { ContactsContactUs } from "./contacts";
+import { CommonBanner } from "../../shared/banner";
+import ContactBanner from "../../assets/img/banners/contact-bg.jpg";
 
 export const ContactUsPage = () => {
   return (

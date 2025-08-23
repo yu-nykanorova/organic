@@ -1,8 +1,7 @@
-import Spicy from "/about/spicy.png"
-import Nuts from "/about/nuts.png"
-import Granat from "/about/granat.png"
-import Ginger from "/about/ginger.png"
-
+import Spicy from "../../assets/img/about/spicy.png";
+import Nuts from "../../assets/img/about/nuts.png";
+import Granat from "../../assets/img/about/granat.png";
+import Ginger from "../../assets/img/about/ginger.png";
 
 export const OfferAboutUs = () => {
   return (

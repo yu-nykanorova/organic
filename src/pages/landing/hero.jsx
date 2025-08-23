@@ -1,11 +1,11 @@
-import heroDishImage from '/hero/hero_dish.png';
-import heroDecorFigs from '/hero/hero_decor_figs.svg';
-import heroDecorLeaves1 from '/hero/hero_decor_leaves_1.svg';
-import heroDecorLeaves2 from '/hero/hero_decor_leaves_2.svg';
-import heroDecorLeaves3 from '/hero/hero_decor_leaves_3.svg';
-import heroDecorLeaves4 from '/hero/hero_decor_leaves_4.svg';
-import heroDecorLeaves5 from '/hero/hero_decor_leaves_5.svg';
-import heroDecorStrawberry from '/hero/hero_decor_strawberry.svg';
+import heroDishImage from '../../assets/img/hero/hero_dish.png';
+import heroDecorFigs from '../../assets/img/hero/hero_decor_figs.svg';
+import heroDecorLeaves1 from '../../assets/img/hero/hero_decor_leaves_1.svg';
+import heroDecorLeaves2 from '../../assets/img/hero/hero_decor_leaves_2.svg';
+import heroDecorLeaves3 from '../../assets/img/hero/hero_decor_leaves_3.svg';
+import heroDecorLeaves4 from '../../assets/img/hero/hero_decor_leaves_4.svg';
+import heroDecorLeaves5 from '../../assets/img/hero/hero_decor_leaves_5.svg';
+import heroDecorStrawberry from '../../assets/img/hero/hero_decor_strawberry.svg';
 
 export const HeroLanding = () => {
     return (

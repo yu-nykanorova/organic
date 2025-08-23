@@ -1,4 +1,4 @@
-import farmsLocation from "/farms/farms-location.svg";
+import farmsLocation from "../../assets/img/contacts/farms-location.svg";
 
 export const FarmsContactUs = () => {
   return (

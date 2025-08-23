@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TeamCard } from "../../shared/team-card";
 import teamData from "../../data/team.json";
+
 export const TeamAboutUs = () => {
   const [visibleItems, setVisibleItems] = useState(3);
   const productList = teamData.slice(0, visibleItems);

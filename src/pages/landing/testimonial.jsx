@@ -1,9 +1,9 @@
 import { Star } from "../../../public/assets/img/testimonial/Star";
-import Reviewer from "/reviewer.png"
-import BG from "/testimonial_bg.png";
+import Reviewer from "../../assets/img/testimonial/reviewer.png";
+import BG from "../../assets/img/testimonial/testimonial_bg.png";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 export const TestimonialLanding = () => {
   const reviews = [

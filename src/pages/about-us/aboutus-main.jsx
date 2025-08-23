@@ -1,9 +1,9 @@
-import { WhyUsAboutUs } from "./why_us"
-import { AboutUsAboutUs } from "./about_us"
-import { OfferAboutUs } from "./offer"
-import { TeamAboutUs } from "./team"
-import { CommonBanner } from "../../shared/banner"
-import AboutUsBanner from "/banners/about-bg.jpg"
+import { WhyUsAboutUs } from "./why_us";
+import { AboutUsAboutUs } from "./about_us";
+import { OfferAboutUs } from "./offer";
+import { TeamAboutUs } from "./team";
+import { CommonBanner } from "../../shared/banner";
+import AboutUsBanner from "../../assets/img/banners/about-bg.jpg";
 
 export const AboutUsPage = () => {
   return (

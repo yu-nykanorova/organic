@@ -1,4 +1,4 @@
-import EcoFriendlyLandingImage from '/public/eco-friendly-landing-photo.jpg';
+import EcoFriendlyLandingImage from '../../assets/img/eco-friendly/eco-friendly-landing-photo.jpg';
 
 export const EcoFriendlyLanding = () => {
     return (
