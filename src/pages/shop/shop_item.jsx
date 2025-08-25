@@ -2,7 +2,7 @@ import { ShopItemCard } from './shop_item_card';
 import { ShopItemAdditional } from './shop_item_additional';
 import { ShopItemToggle } from './shop_item_toggle';
 import { CommonBanner } from "../../shared/banner";
-import ShopSingleBanner from "/banners/shop-single-bg.jpg"
+import ShopSingleBanner from "../../assets/img/banners/shop-single-bg.jpg";
 
 export const ShopItem = () => {
 

@@ -1,7 +1,7 @@
-import Logo from "/logo.svg";
-import Search from "/header/search.svg";
-import Cart from "/header/cart.svg";
 import { useState, useEffect, useRef } from "react";
+import Logo from "../assets/logo.svg";
+import Search from "../assets/img/header/search.svg";
+import Cart from "../assets/img/header/cart.svg";
 
 export const Header = () => {
   const [menuActive, setMenuActive] = useState(false);

@@ -1,5 +1,5 @@
-import Arrow from "/about/arrow.svg"
-import Photo from "/public/404/Photo.png"
+import Arrow from "../../assets/img/about/arrow.svg";
+import Photo from "../../assets/img/404/Photo.png";
 
 export const PageNotFound = () => {
   return (

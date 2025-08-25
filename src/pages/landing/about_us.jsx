@@ -6,7 +6,7 @@ export const AboutUsLanding = () => {
   return (
     <div className="about__container">
       <div className="about__img">
-        <img src="/about/fruit.png" alt="Photo" />
+        <img src="src\assets\img\about\fruit.png" alt="Photo" />
       </div>
       <div className="about__box">
         <div className="about__title">About Us</div>

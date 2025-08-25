@@ -1,8 +1,8 @@
-import Logo from "/logo.svg";
-import Instagram from "/footer/instagram.svg";
-import Facebook from "/footer/facebook.svg";
-import Twitter from "/footer/twitter.svg";
-import Pinterest from "/footer/pinterest.svg";
+import Logo from "../assets/logo.svg";
+import Instagram from "../assets/img/footer/instagram.svg";
+import Facebook from "../assets/img/footer/facebook.svg";
+import Twitter from "../assets/img/footer/twitter.svg";
+import Pinterest from "../assets/img/footer/pinterest.svg";
 
 export const Footer = () => {
   return (

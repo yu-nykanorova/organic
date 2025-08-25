@@ -1,6 +1,6 @@
 import { ShopShop } from "./shop";
 import { CommonBanner } from "../../shared/banner";
-import ShopBanner from "/banners/shop-bg.jpg";
+import ShopBanner from "../../assets/img/banners/shop-bg.jpg";
 
 export const ShopPage = () => {
   

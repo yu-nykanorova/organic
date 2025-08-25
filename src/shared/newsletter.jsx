@@ -1,4 +1,5 @@
-import Subscribe from "/newsletter/subscribe.svg";
+import Subscribe from "../assets/img/newsletter/subscribe.svg";
+
 export const Newsletter = () => {
   return (
     <section className="newsletter">

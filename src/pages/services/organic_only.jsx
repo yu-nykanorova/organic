@@ -1,6 +1,5 @@
 import { Rectangle } from '../../shared/icons/rectangle';
 
-
 export const OrganicService = () => {
   return (
     <>

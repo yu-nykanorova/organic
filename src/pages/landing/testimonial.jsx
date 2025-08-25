@@ -1,5 +1,7 @@
-import { Star } from "../../../public/assets/img/testimonial/Star";
-import Reviewer from "../../assets/img/testimonial/reviewer.png";
+import { Star } from "../../assets/img/testimonial/Star";
+import Reviewer1 from "../../assets/img/testimonial/reviewer1.png";
+import Reviewer2 from "../../assets/img/testimonial/reviewer2.png";
+import Reviewer3 from "../../assets/img/testimonial/reviewer3.png";
 import BG from "../../assets/img/testimonial/testimonial_bg.png";
 import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
@@ -8,21 +10,21 @@ import Slider from "react-slick";
 export const TestimonialLanding = () => {
   const reviews = [
     {
-      photo: Reviewer,
+      photo: Reviewer1,
       name: "Sara Taylor",
       occupation: "Consumer",
       desc: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
     },
 
     {
-      photo: Reviewer,
+      photo: Reviewer2,
       name: "Hannah Lake",
       occupation: "Consumer",
       desc: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
     },
 
     {
-      photo: Reviewer,
+      photo: Reviewer3,
       name: "Nellie Lynch",
       occupation: "Consumer",
       desc: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
