@@ -1,5 +1,7 @@
+@use '../../utils/mixins' as *;
+
 .news-lending {
-    padding: 177rem 0 185rem 0;
+    padding: 177rem 0 253rem 0;
     max-width: 1400rem;
     margin-inline: auto;
 
@@ -74,7 +76,6 @@
         height: 524rem;
         border-radius: 30rem;
         margin: auto;
-        margin-bottom: 185rem;
         @include tablet{
             width: 577rem;
             height: 444rem;

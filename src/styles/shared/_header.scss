@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .header {
   max-width: 1920rem;
   margin-inline: auto;
@@ -5,14 +7,23 @@
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20rem;
-  @include tablet {
-    flex-direction: column;
-    align-items: baseline;
-    gap: 10rem;
-    padding: 20rem;
+
+  @include desktop-for-header {
+    padding: 30rem;
   }
+
+  @include desktop-small {
+    padding: 50rem;
+  }
+
+  // @include tablet {
+  //   flex-direction: column;
+  //   align-items: baseline;
+  //   gap: 10rem;
+  //   padding: 20rem;
+  // }
 
   &__backdrop {
     background: rgba(0, 0, 0, 0.5);
@@ -26,9 +37,11 @@
     display: none;
     opacity: 0;
     transition: 0.2s all ease-in-out;
+
     @include desktop-small {
       display: block;
     }
+
     &._active {
       opacity: 1;
       transform: translateX(0);
@@ -50,6 +63,7 @@
       height: 56rem;
     }
   }
+
   &__logo:hover {
     color: var(--green-color-second);
     transform: scale(1.03);
@@ -61,8 +75,12 @@
     justify-content: center;
     gap: 30rem;
     list-style: none;
-    margin-left: 150rem;
     transition: 0.2s all ease-in-out;
+
+    @include desktop-for-eco_friendly {
+      gap: 15rem;
+    }
+
     @include desktop-small {
       z-index: 9;
       position: fixed;
@@ -78,6 +96,7 @@
       transition: var(--transition);
       margin-left: 0;
     }
+
     &._active {
       transform: translateX(0);
     }
@@ -104,10 +123,10 @@
   }
 
   &__btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 18rem;
-    margin-left: auto;
+
     @include mobile {
       justify-content: flex-end;
       flex-wrap: wrap;
@@ -117,41 +136,48 @@
 
   &-search {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 5rem 6rem;
     border-radius: 36rem;
     background: #fafafa;
-    max-width: 376rem;
+    width: 376rem;
     gap: 6rem;
-    flex-shrink: 0;
-    @include mobile {
-      max-width: 200rem;
+
+    @include desktop-for-eco_friendly {
+      width: 230rem;
     }
+
+    @include desktop-small {
+      width: 300rem;
+    }
+
     &__input {
       border: 0;
       outline: 0;
       background: transparent;
-      border-radius: none;
-      width: 100%;
+      width: 70%;
       font-family: var(--font-family);
       font-weight: 700;
       font-size: 16rem;
       color: var(--green-color);
     }
+    
     &__btn {
       border: 0;
       outline: 0;
       cursor: pointer;
       background: var(--green-color);
       border-radius: 100%;
-      width: 56rem;
-      height: 56rem;
+      padding: 17rem 16rem 18rem 19rem;
       display: flex;
-      text-align: center;
+      align-items: center;
       justify-content: center;
+      flex-shrink: 0;
     }
+
     &__icon {
-      padding: 17rem;
-      width: 22rem;
+      width: 21rem;
       height: 21rem;
     }
   }
@@ -169,17 +195,15 @@
     &__group {
       background-color: var(--dark-green-color);
       border-radius: 100%;
-      width: 56rem;
-      height: 56rem;
-      display: inline-flex;
+      padding: 17rem 17rem 17rem 15rem;
+      display: flex;
       text-align: center;
       justify-content: center;
     }
 
     &__icon {
-      padding: 17rem;
-      width: 27rem;
-      height: 24rem;
+      width: 24rem;
+      height: 22rem;
     }
 
     &__text {
@@ -226,30 +250,8 @@
     width: 8rem;
     height: 5rem;
   }
-}
-@media (max-width: 1430px) {
-  .header {
-    padding: 30rem;
-  }
-  .header__ul {
-    margin-left: 60rem;
-  }
-}
+} 
 
-@media (max-width: 1350px) {
-  .header__ul {
-    margin-left: 10rem;
-  }
-  .header__logo {
-    font-size: 27rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .header__ul {
-    margin-left: 0;
-  }
-}
 .dropdown {
   position: absolute;
   top: 100%;

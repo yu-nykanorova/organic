@@ -1,12 +1,13 @@
-@import 'about_us';
-@import 'discount';
-@import 'eco_friendly';
-@import 'hero';
-@import 'news';
-@import 'offer';
-@import 'organic_juice';
-@import 'products';
-@import 'testimonial';
+@use '../../utils/mixins' as *;
+@use 'about_us';
+@use 'discount';
+@use 'eco_friendly';
+@use 'hero';
+@use 'news';
+@use 'offer';
+@use 'organic_juice';
+@use 'products';
+@use 'testimonial';
 
 .landing {
     max-width: 1920px;

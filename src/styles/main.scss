@@ -1,16 +1,16 @@
-@import 'utils/reset';
-@import 'utils/base';
-@import 'utils/vars';
-@import 'utils/mixins';
+@use 'utils/reset';
+@use 'utils/base';
+@use 'utils/vars' as *;
+@use 'utils/mixins' as *;
 
-@import 'shared/header';
-@import 'shared/footer';
-@import 'shared/newsletter';
-@import 'shared/product-card';
-@import 'shared/team-card';
-@import 'shared/banner';
+@use 'shared/header';
+@use 'shared/footer';
+@use 'shared/newsletter';
+@use 'shared/product-card';
+@use 'shared/team-card';
+@use 'shared/banner';
 
-@import 'pages/pages.scss';
+@use 'pages/pages.scss';
 
 
 

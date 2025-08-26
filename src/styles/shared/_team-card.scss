@@ -1,5 +1,4 @@
-@import '../utils/mixins';
-@import '../utils/vars';
+@use '../utils/mixins' as *;
 
 .teammate {
   

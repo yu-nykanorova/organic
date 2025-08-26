@@ -81,7 +81,7 @@ export const Header = () => {
           >
             <span className="header__a pages-link">
               Pages
-              <img className="arrow-icon" src="/header/arrow.svg" alt="arrow" />
+              <img className="arrow-icon" src="src/assets/img/header/arrow.svg" alt="arrow" />
             </span>
             {(pagesDropdownActive || pagesDropdownHovered) && (
               <ul className="dropdown">
@@ -143,8 +143,8 @@ export const Header = () => {
           method="get"
           onSubmit={handleSubmit}
         >
-          <input type="text" className="header-search__input" />
-          <button type="submit" className="header-search__btn">
+          <input type="text" className="header-search__input" id="header-search__input"/>
+          <button type="search" className="header-search__btn">
             <img
               className="header-search__icon"
               src={Search}

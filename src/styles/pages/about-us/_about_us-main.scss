@@ -1,7 +1,8 @@
-@import 'about_us';
-@import 'team';
-@import 'why_us';
-@import 'offer';
+@use '../../utils/mixins' as *;
+@use 'about_us';
+@use 'team';
+@use 'why_us';
+@use 'offer';
 
 
 .aboutus_page {

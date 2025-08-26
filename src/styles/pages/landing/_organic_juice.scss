@@ -1,3 +1,5 @@
+@use '../../utils/mixins' as *;
+
 .organic {
     padding: 187rem 0;
     background-color: var(--light-green-color);

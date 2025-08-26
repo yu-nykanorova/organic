@@ -1,5 +1,6 @@
-@import 'shop';
-@import 'shop_item';
+@use '../../utils/mixins' as *;
+@use 'shop';
+@use 'shop_item';
 
 .shop_page {
     max-width: 1920rem;

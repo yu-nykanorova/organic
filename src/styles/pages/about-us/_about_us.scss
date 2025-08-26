@@ -1,3 +1,5 @@
+@use '../../utils/mixins' as *;
+
 .about_us {
   &__container {
     display: grid;

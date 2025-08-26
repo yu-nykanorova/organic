@@ -1,3 +1,5 @@
+@use '../../utils/mixins' as *;
+
 .why-us{
     flex-direction: column;
     justify-content: center;
@@ -77,6 +79,7 @@
             }
     
             &-point{
+                border: 1px solid red;
                 display: flex;
                 justify-content: start;
                 align-items: center;
@@ -95,6 +98,9 @@
                 }
                 &-icon{
                     color: var(--green-color);
+                    div {
+                        display: flex;
+                    }
                 }
                 &-title{
                     font-family: var(--font-family);

@@ -1,11 +1,13 @@
+@use '../../utils/mixins' as *;
+
 .shop{
     padding: 90rem 0 140rem;
-    
-    @media screen and (max-width:$tablet){
+
+    @include tablet {
         padding: 160rem 10rem 90rem;
     }
-    
-    @media screen and (max-width:$mobile){
+
+    @include mobile {
         padding: 66rem 0 86rem;
     }
     

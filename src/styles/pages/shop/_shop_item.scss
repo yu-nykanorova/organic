@@ -1,17 +1,19 @@
+@use '../../utils/mixins' as *;
+
 .shop__items{
     max-width: 1337rem;
     margin: 0 auto;
     padding: 133rem 15rem 90rem;
 
-    @media screen and (max-width:$desktop-small) {
+    @include desktop-small {
         padding: 123rem 15rem 80rem;
     }
 
-    @media screen and (max-width:$tablet-small) {
+    @include tablet-small {
         padding: 83rem 15rem 0;
     }
 
-    @media screen and (max-width:$mobile) {
+    @include mobile {
         padding: 50rem 15rem 0;
     }
 
@@ -19,7 +21,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media screen and (max-width:$tablet) {
+        @include tablet {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
@@ -35,7 +37,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media screen and (max-width:$desktop-small) {
+    @include desktop-small {
         width: 451rem; 
         height: 423rem;
     }
@@ -62,12 +64,12 @@
     max-width: 658rem;
     padding: 106rem 0 106rem 20rem;
 
-    @media screen and (max-width:$desktop-small) {
+    @include desktop-small {
         padding: 26rem 0; 
         margin-left: 20rem;
     }
 
-    @media screen and (max-width:$tablet) {
+    @include tablet {
         max-width: 100%;
     }
 }
@@ -93,7 +95,7 @@
     display: flex;
     column-gap: 20rem;
 
-    @media screen and (max-width:$tablet-small) {
+    @include tablet-small {
         flex-wrap: wrap;
         row-gap: 20rem;
     }
@@ -201,20 +203,23 @@
     align-items: center;
     margin: 0 auto 140rem;
 
-    @media screen and (max-width:$tablet-small) {
+    @include tablet-small {
         height: 270rem;
     }
 
-    @media screen and (max-width:$mobile-for-shop_items) {
+    @include mobile-for-shop_items {
         height: 400rem;
         margin: -20rem auto 160rem;
     }
 }
-.shop__item_info-btn{
-    @media screen and (max-width:$tablet-small) {
+
+.shop__item_info-btn {
+
+    @include tablet-small {
         height: 70rem;
     }
-    @media screen and (max-width:$mobile-for-shop_items) {
+
+    @include mobile-for-shop_items {
         height: 150rem;
         display: flex;
         justify-content: center;
@@ -247,7 +252,7 @@
     -ms-transition: ease-in-out 0.5s;
     -o-transition: ease-in-out 0.5s;
 
-    @media screen and (max-width:$tablet-small) {
+    @include tablet-small {
         margin: 5rem;
         padding: 18rem 10rem;
         font-size: 14rem;
@@ -281,7 +286,7 @@
     -ms-transition: ease-in-out 0.5s;
     -o-transition: ease-in-out 0.5s;
 
-    @media screen and (max-width:$tablet-small) {
+    @include tablet-small {
         margin: 5rem;
         padding: 18rem 10rem;
         font-size: 16rem;
@@ -296,10 +301,9 @@
     color: var(--white);
     height: 80rem;
 
-    @media screen and (max-width:$tablet-small) {
-       height: 70rem;
+    @include tablet-small {
+        height: 70rem;
     }
-
 }
 
 .shop__item_desc-info{
@@ -309,7 +313,7 @@
 .shop__item_desc-content{
     height: 120rem;
 
-    @media screen and (max-width:tablet-small) {
+    @include tablet-small {
         height: 300rem;
     }
 }
@@ -329,23 +333,23 @@
     color: var(--black-color);
     text-align: center;
 
-    @media screen and (max-width:$desktop-small) {
+    @include desktop-small {
         padding: 0 30rem;
     }
 
-    @media screen and (max-width:$mobile) {
+    @include mobile {
         font-size: 15rem;
     }
 }
 
 .shop__item-additional{
     padding: 0 0 140rem;
-    
-    @media screen and (max-width:$tablet){
+
+    @include tablet {
         padding: 0 10rem 70rem;
     }
     
-    @media screen and (max-width:$mobile){
+    @include mobile {
         padding: 0 10rem 58rem;
     }
 

@@ -1,4 +1,5 @@
 $newsletterBgImage: "src/assets/img/newsletter/background.jpg";
+@use '../utils/mixins' as *;
 
 .newsletter {
   padding: 105rem 71rem;

@@ -1,3 +1,5 @@
+@use '../../utils/mixins' as *;
+
 .testimonial {
   text-align: center;
   display: flex;

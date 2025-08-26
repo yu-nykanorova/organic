@@ -1,6 +1,7 @@
-@import 'farms';
-@import 'contacts';
-@import 'form';
+@use '../../utils/mixins' as *;
+@use 'farms';
+@use 'contacts';
+@use 'form';
 
 .contactus_page {
     max-width: 1920px;

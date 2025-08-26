@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .footer {
   max-width: 1440rem;
   margin-inline: auto;
@@ -92,17 +94,20 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 15rem;
-    }
-    &__social a {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-      padding: 20rem;
-      border-radius: 100%;
-      background: var(--light-green-color);
-      width: 20rem;
-      height: 20rem;
+
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20rem;
+        border-radius: 100%;
+        background: var(--light-green-color);
+
+        img {
+          width: 20rem;
+          height: 20rem;
+        }
+      }
     }
   }
 

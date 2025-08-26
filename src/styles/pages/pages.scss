@@ -1,10 +1,9 @@
-@import 'landing/landing-main';
-@import 'about-us/about_us-main';
-@import 'team/team-main';
-@import 'shop/shop-main';
-@import 'service/service-main';
-@import 'quality-stan/quality_stan-main';
-@import 'contact/contact-main';
+@use 'landing/landing-main';
+@use 'about-us/about_us-main';
+@use 'team/team-main';
+@use 'shop/shop-main';
+@use 'service/service-main';
+@use 'quality-stan/quality_stan-main';
+@use 'contact/contact-main';
 
-
-@import 'utility-pages/404';
+@use 'utility-pages/not-found';

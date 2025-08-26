@@ -1,4 +1,5 @@
-@import 'team.scss';
+@use '../../utils/mixins' as *;
+@use 'team.scss';
 
 .team_page {
     max-width: 1920px;

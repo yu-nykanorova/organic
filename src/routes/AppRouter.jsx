@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { PageNotFound } from "../pages/utility_pages/404";
+import { PageNotFound } from "../pages/utility_pages/not-found";
 
 import { TeamPage } from "../pages/team/team-main";
 import { Landing } from "../pages/landing/landing-main";
