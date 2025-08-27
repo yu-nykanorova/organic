@@ -1,12 +1,13 @@
 import Food from "../../assets/img/about/food.svg";
 import Mailbox from "../../assets/img/about/mailbox.svg";
 import Arrow from "../../assets/img/about/arrow.svg";
+import Fruit from "../../assets/img/about/fruit.png";
 
 export const AboutUsLanding = () => {
   return (
     <div className="about__container">
       <div className="about__img">
-        <img src="src\assets\img\about\fruit.png" alt="Photo" />
+        <img src={Fruit} alt="Photo" />
       </div>
       <div className="about__box">
         <div className="about__title">About Us</div>

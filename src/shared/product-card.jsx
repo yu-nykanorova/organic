@@ -7,7 +7,7 @@ export const ProductCard = ({ item }) => {
 
     return (
         <Link to={`/shop/shop-item/${item.id}`}>
-            <div className='card' style={{backgroundImage: `url(${item.image.src})`}}>
+            <div className='card' style={{ backgroundImage: `url(${item.image.src})` }}>
                 <label>{item.item.type}</label>
                 <div className='card__panel'>
                     <p className='card__name'>{item.item.name}</p>
