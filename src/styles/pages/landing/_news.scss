@@ -1,4 +1,6 @@
 @use '../../utils/mixins' as *;
+$newsBgImage1: "/img/news/Salad.png";
+$newsBgImage2: "/img/news/Tomato.png";
 
 .news-lending {
     padding: 177rem 0 253rem 0;
@@ -204,9 +206,9 @@
 }
 
 .salad {
-    background: url(src/assets/img/news/Salad.png);
+    background: url("#{$newsBgImage1}");
 }
 
 .tomato {
-    background: url(src/assets/img/news/Tomato.png);
+    background: url("#{$newsBgImage2}");
 }

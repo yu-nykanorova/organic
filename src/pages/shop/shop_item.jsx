@@ -7,7 +7,7 @@ import ShopSingleBanner from "../../assets/img/banners/shop-single-bg.jpg";
 export const ShopItem = () => {
 
     return(
-        <div>
+        <div className="shop_single-item_page">
             <CommonBanner imgSrc={ShopSingleBanner} altText={'ShopSingleBanner'}/>
             <ShopItemCard />
             <ShopItemToggle />

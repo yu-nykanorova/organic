@@ -1,10 +1,13 @@
 @use '../../utils/mixins' as *;
+$testimonialBgImage: "/img/testimonial_bg.png";
 
 .testimonial {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 164rem;
+  background-image: url("#{$testimonialBgImage}");
 
   &__pretitle {
     font-family: var(--third-family);
@@ -100,7 +103,17 @@
   }
   &__rating {
     margin-bottom: 25rem;
+
+    &-staricon {
+      width: 28rem;
+      height: 26rem;
+      
+      path {
+        fill: var(--orange-color);
+      }
+    }
   }
+
   &__desc {
     font-family: var(--second-family);
     font-weight: 400;

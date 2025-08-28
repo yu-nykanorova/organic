@@ -1,6 +1,6 @@
 @use '../../utils/mixins' as *;
 
-.shop{
+.shop {
     padding: 90rem 0 140rem;
 
     @include tablet {
@@ -11,7 +11,7 @@
         padding: 66rem 0 86rem;
     }
     
-    &__container{
+    &__container {
         max-width: 1400rem;
         margin: 0 auto;
         padding: 0;
@@ -21,7 +21,7 @@
         gap: 20rem;
     }
 
-    h2{
+    h2 {
         color: var(--dark-green-color);
         text-align: center;
         margin-bottom: 50rem;

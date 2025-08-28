@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "photo": {
+            "src": "/img/reviewers/reviewer1.png",
+            "alt": "reviewer photo"
+        },
+        "name": "Sara Taylor",
+        "occupation": "Consumer",
+        "desc": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been."
+    },
+    {
+        "id": 2,
+        "photo": {
+            "src": "/img/reviewers/reviewer2.png",
+            "alt": "reviewer photo"
+        },
+        "name": "Hannah Lake",
+        "occupation": "Consumer",
+        "desc": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been."
+    },
+    {
+        "id": 3,
+        "photo": {
+            "src": "/img/reviewers/reviewer3.png",
+            "alt": "reviewer photo"
+        },
+        "name": "Nellie Lynch",
+        "occupation": "Consumer",
+        "desc": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been."
+    }
+]

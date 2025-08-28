@@ -1,53 +1,22 @@
-import { Star } from "../../assets/img/testimonial/Star";
-import Reviewer1 from "../../assets/img/testimonial/reviewer1.png";
-import Reviewer2 from "../../assets/img/testimonial/reviewer2.png";
-import Reviewer3 from "../../assets/img/testimonial/reviewer3.png";
-import BG from "../../assets/img/testimonial/testimonial_bg.png";
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import reviews from "../../data/reviews.json";
+import { StarIcon } from "../../shared/icons/starIcon";
 
 export const TestimonialLanding = () => {
-  const reviews = [
-    {
-      photo: Reviewer1,
-      name: "Sara Taylor",
-      occupation: "Consumer",
-      desc: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-    },
-
-    {
-      photo: Reviewer2,
-      name: "Hannah Lake",
-      occupation: "Consumer",
-      desc: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-    },
-
-    {
-      photo: Reviewer3,
-      name: "Nellie Lynch",
-      occupation: "Consumer",
-      desc: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-    },
-  ];
 
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
-  };
-
-  const sectionBG = {
-    backgroundImage: `url(${BG})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    //autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000
   };
 
   return (
-    <section className="testimonial" style={sectionBG}>
+    <section className="testimonial">
       <p className="testimonial__pretitle">Testimonial</p>
       <h2 className="testimonial__title">What Our Customers Are Saying?</h2>
 
@@ -56,13 +25,13 @@ export const TestimonialLanding = () => {
           {reviews.map((review, index) => (
             <div key={index} className="testimonial__review">
               <div className="reviewer">
-                <img src={review.photo} alt={review.name} className="reviewer__img" />
+                <img src={review.photo.src} alt={review.photo.alt} className="reviewer__img" />
                 <div className="reviewer__rating">
-                  <Star />
-                  <Star />
-                  <Star />
-                  <Star />
-                  <Star />
+                  <StarIcon className="reviewer__rating-staricon" />
+                  <StarIcon className="reviewer__rating-staricon" />
+                  <StarIcon className="reviewer__rating-staricon" />
+                  <StarIcon className="reviewer__rating-staricon" />
+                  <StarIcon className="reviewer__rating-staricon" />
                 </div>
                 <p className="reviewer__desc">{review.desc}</p>
                 <h3 className="reviewer__name">{review.name}</h3>

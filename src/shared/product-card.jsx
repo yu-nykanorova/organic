@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
 import { RatingStar } from './rating';
-import '../styles/shared/_product-card.scss';
 
 export const ProductCard = ({ item }) => {
 

@@ -2,7 +2,7 @@
   {
     "id": "1",
     "image": {
-      "src": "src/assets/img/team/giovani-bacardo.png",
+      "src": "/img/team/giovani-bacardo.png",
       "alt": "person"
     },
     "item": {
@@ -20,7 +20,7 @@
   {
     "id": "2",
     "image": {
-      "src": "src/assets/img/team/marianne-loreno.png",
+      "src": "/img/team/marianne-loreno.png",
       "alt": "person"
     },
     "item": {
@@ -39,7 +39,7 @@
   {
     "id": "3",
     "image": {
-      "src": "src/assets/img/team/riga-pelore.png",
+      "src": "/img/team/riga-pelore.png",
       "alt": "person"
     },
     "item": {
@@ -58,7 +58,7 @@
   {
     "id": "4",
     "image": {
-      "src": "src/assets/img/team/keira-knightley.png",
+      "src": "/img/team/keira-knightley.png",
       "alt": "person"
     },
     "item": {
@@ -76,7 +76,7 @@
   {
     "id": "5",
     "image": {
-      "src": "src/assets/img/team/scott-lawrence.png",
+      "src": "/img/team/scott-lawrence.png",
       "alt": "person"
     },
     "item": {
@@ -95,7 +95,7 @@
   {
     "id": "6",
     "image": {
-      "src": "src/assets/img/team/karen-allen.png",
+      "src": "/img/team/karen-allen.png",
       "alt": "person"
     },
     "item": {

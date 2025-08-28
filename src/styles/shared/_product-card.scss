@@ -1,9 +1,125 @@
 @use '../utils/mixins' as *;
 
-.active-star{
+.card {
+    position: relative;
+    width: 278rem;
+    height: 422rem;
+    border-radius: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.6s, background-size 0.6s, filter 0.6s;
+    -webkit-transition: transform 0.6s, background-size 0.6s, filter 0.6s;
+    -moz-transition: transform 0.6s, background-size 0.6s, filter 0.6s;
+    -ms-transition: transform 0.6s, background-size 0.6s, filter 0.6s;
+    -o-transition: transform 0.6s, background-size 0.6s, filter 0.6s;
+    -webkit-border-radius: 30rem;
+    -moz-border-radius: 30rem;
+    -ms-border-radius: 30rem;
+    -o-border-radius: 30rem;
+
+    @include desktop-small {
+        width: 250rem;
+        height: 400rem;
+    }
+
+    &:hover {
+        transform: translateY(-1rem);
+        background-size: 100%;
+        filter: brightness(0.9);
+        -webkit-filter: brightness(0.9);
+        -webkit-transform: translateY(-1rem);
+        -moz-transform: translateY(-1rem);
+        -ms-transform: translateY(-1rem);
+        -o-transform: translateY(-1rem);
+
+        @include desktop-small {
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 29rem;
+        left: 30rem;
+        background-color: var(--dark-green-color);
+        font-family: var(--second-family);
+        font-weight: 600;
+        padding: 5rem 12rem;
+        color: var(--white);
+        font-size: 15rem;
+        border-radius: 8rem;
+        -webkit-border-radius: 8rem;
+        -moz-border-radius: 8rem;
+        -ms-border-radius: 8rem;
+        -o-border-radius: 8rem;
+    }
+
+    &__panel {
+        width: 100%;
+        padding: 0 26rem 0 30rem;
+        position: absolute;
+        bottom: 17rem;
+        left: 0;
+
+        @include desktop-small {
+            margin-top: 299rem;
+        }
+
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 6rem;
+            border-top: 1rem solid var(--light-gray-color);
+        }
+
+        &-price {
+            padding-top: 13rem;
+        }
+
+        &-rating {
+            margin-top: 13rem;
+        }
+    }
+
+    &__name {
+        color: var(--dark-green-color);
+        font-family: var(--font-family);
+        font-size: 20rem;
+        font-weight: 600;
+    }
+
+    &__fullprice {
+        font-family: var(--second-family);
+        color: var(--gray-price-color);
+        font-size: 15rem;
+        text-decoration: line-through;
+        font-weight: 600;
+        margin-right: 8rem;
+    }
+
+    &__discountprice{
+        font-family: var(--second-family);
+        color: var(--dark-green-color);
+        font-size: 18rem;
+        font-weight: 700;
+    }
+}
+
+.rating-staricon {
+    width: 15rem;
+}
+
+.active-star {
     color: var(--orange-color);
 }
 
-.rating-star{
+.rating-star {
     color: var(--gray-color);
 }

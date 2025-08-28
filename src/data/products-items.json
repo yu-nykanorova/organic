@@ -2,11 +2,11 @@
     {
         "id": "1",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-1.png",
+            "src": "/img/products-items/item-1.png",
             "alt": "item-1"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item1.png"
+            "src": "/img/products-items/item1.png"
         },  
         "item": {
             "type": "Vegetable",
@@ -25,11 +25,11 @@
     {
         "id": "2",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-2.png",
+            "src": "/img/products-items/item-2.png",
             "alt": "item-2"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item2.png"
+            "src": "/img/products-items/item2.png"
         },  
         "item": {
             "type": "Fresh",
@@ -48,11 +48,11 @@
     {
         "id": "3",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-3.png",
+            "src": "/img/products-items/item-3.png",
             "alt": "item-3"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item3.png"
+            "src": "/img/products-items/item3.png"
         },  
         "item": {
             "type": "Millets",
@@ -71,11 +71,11 @@
     {
         "id": "4",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-4.png",
+            "src": "/img/products-items/item-4.png",
             "alt": "item-4"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item4.png"
+            "src": "/img/products-items/item4.png"
         },  
         "item": {
             "type": "Vegetable",
@@ -94,11 +94,11 @@
     {
         "id": "5",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-5.png",
+            "src": "/img/products-items/item-5.png",
             "alt": "item-5"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item5.png"
+            "src": "/img/products-items/item5.png"
         },  
         "item": {
             "type": "Health",
@@ -117,11 +117,11 @@
     {
         "id": "6",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-6.png",
+            "src": "/img/products-items/item-6.png",
             "alt": "item-6"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item6.png"
+            "src": "/img/products-items/item6.png"
         },  
         "item": {
             "type": "Nuts",
@@ -140,11 +140,11 @@
     {
         "id": "7",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-7.png",
+            "src": "/img/products-items/item-7.png",
             "alt": "item-7"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item7.png"
+            "src": "/img/products-items/item7.png"
         },   
         "item": {
             "type": "Fresh",
@@ -163,11 +163,11 @@
     {
         "id": "8",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-8.png",
+            "src": "/img/products-items/item-8.png",
             "alt": "item-8"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item8.png"
+            "src": "/img/products-items/item8.png"
         },   
         "item": {
             "type": "Fresh",
@@ -186,11 +186,11 @@
     {
         "id": "9",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-9.png",
+            "src": "/img/products-items/item-9.png",
             "alt": "item-9"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item9.png"
+            "src": "/img/products-items/item9.png"
         },  
         "item": {
             "type": "Health",
@@ -209,11 +209,11 @@
     {
         "id": "10",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-10.png",
+            "src": "/img/products-items/item-10.png",
             "alt": "item-10"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item10.png"
+            "src": "/img/products-items/item10.png"
         },  
         "item": {
             "type": "Nuts",
@@ -232,11 +232,11 @@
     {
         "id": "11",
         "image-card": {
-            "src": "src/assets/img/shop/products-items//item-11.png",
+            "src": "/img/products-items//item-11.png",
             "alt": "item-11"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item11.png"
+            "src": "/img/products-items/item11.png"
         },   
         "item": {
             "type": "Fresh",
@@ -255,11 +255,11 @@
     {
         "id": "12",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-12.png",
+            "src": "/img/products-items/item-12.png",
             "alt": "item-12"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item12.png"
+            "src": "/img/products-items/item12.png"
         },  
         "item": {
             "type": "Fresh",
@@ -278,11 +278,11 @@
     {
         "id": "13",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-13.png",
+            "src": "/img/products-items/item-13.png",
             "alt": "item-13"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item13.png"
+            "src": "/img/products-items/item13.png"
         },  
         "item": {
             "type": "Vegetable",
@@ -301,11 +301,11 @@
     {
         "id": "14",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-14.png",
+            "src": "/img/products-items/item-14.png",
             "alt": "item-14"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item14.png"
+            "src": "/img/products-items/item14.png"
         },  
         "item": {
             "type": "Vegetable",
@@ -324,11 +324,11 @@
     {
         "id": "15",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-15.png",
+            "src": "/img/products-items/item-15.png",
             "alt": "item-15"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items//item15.png"
+            "src": "/img/products-items//item15.png"
         },  
         "item": {
             "type": "Vegetable",
@@ -347,11 +347,11 @@
     {
         "id": "16",
         "image-card": {
-            "src": "src/assets/img/shop/products-items/item-16.png",
+            "src": "/img/products-items/item-16.png",
             "alt": "item-16"
         },
         "image": {
-            "src": "src/assets/img/shop/products-items/item16.png"
+            "src": "/img/products-items/item16.png"
         },  
         "item": {
             "type": "Vegetable",
