@@ -21,7 +21,7 @@ export const ProductsLanding = () => {
             ))}
           </div>
           {visibleItems < productData.length && (  
-              <button className='products__button' onClick={showMoreItems}>Load more <span><ArrowIcon /></span></button>
+              <button className='products__button' onClick={showMoreItems}>Load More <span><ArrowIcon /></span></button>
             )}
         </div>
     );

@@ -6,8 +6,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     align-items: center;
-    background: var(--white);
-    padding: 189rem 20rem;
+    background: var(--gray-color-third);
+    padding: 120rem 80rem 130rem 100rem;
+    margin-top: 203rem;
 
     @include desktop-small {
       display: flex;
@@ -19,10 +20,12 @@
   }
 
   &__img {
+    display: flex;
     max-width: 911rem;
    
     img {
       width: 100%;
+      transform: scale(1.05) translateX(30rem);
     }
 
     @include tablet {
@@ -80,10 +83,10 @@
     align-items: center;
     margin-bottom: 30rem;
     margin-top: 46rem;
+    max-width: 564rem;
 
     @include mobile {
       flex-direction: column;
-
     }
   }
 
@@ -114,12 +117,14 @@
   }
 
   &__btn {
+    max-width: 220rem;
     display: flex;
     gap: 10rem;
     border-radius: 16rem;
-    padding: 28rem 39rem;
+    padding: 28rem 49rem;
     background: var(--dark-green-color);
     color: var(--white);
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 20rem;
     border: 0;

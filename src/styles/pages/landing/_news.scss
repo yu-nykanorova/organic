@@ -38,30 +38,21 @@ $newsBgImage2: "/img/news/Tomato.png";
     }
 
     &__btn {
-        padding: 28rem 39rem;
+        padding: 28rem 45rem;
         display: inline-flex;
         align-items: center;
         gap: 10rem;
         border-radius: 16rem;
-        border: 1rem solid var(--dark-green-color);
+        border: 2rem solid var(--dark-green-color);
         text-decoration: none;
-        font-family: var(--font-family);
-        font-weight: 700;
-        font-size: 20rem;
-        color: var(--dark-green-color);
         transition: .2s all ease-in-out;
-    }
 
-    .btn-arrow {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 19rem;
-        height: 19rem;
-        background: var(--dark-green-color-second);
-        border-radius: 100%;
-        font-size: 9rem;
-        transition: .2s all ease-in-out;
+        p {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 20rem;
+            color: var(--dark-green-color);
+        }
     }
 
     &__items {
@@ -88,7 +79,7 @@ $newsBgImage2: "/img/news/Tomato.png";
         }
       
 
-        &__img {
+        &-img {
             position: absolute;
             top: 43rem;
             left: 32rem;
@@ -99,7 +90,7 @@ $newsBgImage2: "/img/news/Tomato.png";
             }
         }
 
-        &__date {
+        &-date {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -113,27 +104,27 @@ $newsBgImage2: "/img/news/Tomato.png";
                 width: 62rem;
                 height: 62rem;
             }
+
+            p {
+                color: var(--dark-green-color);
+                font-family: var(--font-family);
+                font-weight: 800;
+                font-size: 25rem;
+                text-align: center;
+                line-height: 20rem;
+            }
+
+            span {
+                font-size: 20rem;
+            }
         }
 
-        &__date p {
-            color: var(--dark-green-color);
-            font-family: var(--font-family);
-            font-weight: 800;
-            font-size: 25rem;
-            text-align: center;
-            line-height: 20rem;
-        }
-
-        &__date span {
-            font-size: 20rem;
-        }
-
-        &__info {
-            max-width: 493rem;
-            max-height: 330rem;
+        &-info {
+            width: 90%;
+            max-width: 613rem;
             padding: 46rem 57rem 60rem 57rem;
-            top: 268rem;
-            left: 32rem;
+            top: 262rem;
+            left: 5%;
             position: absolute;
             background: var(--white);
             box-shadow: 0 20rem 35rem 0 rgba(167, 167, 167, 0.25);
@@ -150,7 +141,7 @@ $newsBgImage2: "/img/news/Tomato.png";
                 left: 25rem;
             }
 
-            &__icon {
+            &-icon {
                 display: flex;
                 gap: 8rem;
                 align-items: center;
@@ -160,7 +151,14 @@ $newsBgImage2: "/img/news/Tomato.png";
                 }
             }
 
-            &__title {
+            &-name {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 18rem;
+                color: var(--dark-green-color);
+            }
+
+            &-title {
                 color: var(--dark-green-color);
                 font-family: var(--font-family);
                 font-weight: 800;
@@ -171,7 +169,7 @@ $newsBgImage2: "/img/news/Tomato.png";
                 }
             }
 
-            &__desc {
+            &-desc {
                 color: var(--black-color);
                 font-family: var(--second-family);
                 font-weight: 400;
@@ -183,13 +181,9 @@ $newsBgImage2: "/img/news/Tomato.png";
                 }
             }
 
-            &__btn {
+            &-btn {
                 text-decoration: none;
-                font-family: var(--font-family);
-                font-weight: 700;
-                font-size: 20rem;
-                color: var(--dark-green-color);
-                padding: 28rem 39rem;
+                padding: 28rem 47rem;
                 background: var(--yelow-color);
                 border-radius: 16rem;
                 cursor: pointer;
@@ -197,18 +191,46 @@ $newsBgImage2: "/img/news/Tomato.png";
                 align-items: center;
                 gap: 10rem;
                 transition: .2s all ease-in-out;
+                margin-top: 15rem;
+
                 @include mobile{
                     padding: 8rem 14rem;
+                }
+
+                p {
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 20rem;
+                    color: var(--dark-green-color);
                 }
             }
         }
     }
+
+    .arrow-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 100%;
+        background: var(--dark-green-color-second);
+
+        .arrow-icon {
+            display: flex;
+
+            svg path {
+                stroke: var(--white);
+            }
+        }
+    }
+
+    .salad {
+        background: url("#{$newsBgImage1}");
+    }
+    
+    .tomato {
+        background: url("#{$newsBgImage2}");
+    }
 }
 
-.salad {
-    background: url("#{$newsBgImage1}");
-}
-
-.tomato {
-    background: url("#{$newsBgImage2}");
-}

@@ -7,8 +7,6 @@
         background: var(--gray-color-second);
         position: relative;
         display: flex;
-        align-items: stretch;
-        justify-content: stretch;
 
         @include desktop-small {
             flex-direction: column;
@@ -147,8 +145,8 @@
     }
 
     &__info {
-        padding: 200rem 0 200rem 200rem;
-        max-width: 530rem;
+        padding: 247rem 0 246rem 260rem;
+        max-width: 790rem;
         z-index: 2;
         @include desktop-small {
             padding: 120rem 70rem 80rem;
@@ -241,13 +239,12 @@
     }
 
     &__image {
+        display: flex;
+        justify-content: center;
         z-index: 2;
         overflow: hidden;
         width: 100%;
-        @include desktop-small {
-            display: flex;
-            justify-content: center;
-        }
+
         img {
             height: 100%;
             width: auto;

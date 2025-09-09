@@ -43,8 +43,8 @@ export const AboutUsLanding = () => {
             </p>
           </div>
         </div>
-        <a href="/Shop" className="about_us__btn" type="submit">
-          Explore More <img src={Arrow} alt="arrow" />
+        <a href="/Shop" className="about__btn" type="submit">
+          Shop Now <img src={Arrow} alt="arrow" />
         </a>
       </div>
     </div>
