@@ -1,8 +1,8 @@
 import Subscribe from "../assets/img/newsletter/subscribe.svg";
 
-export const Newsletter = () => {
+export const Newsletter = ({ className }) => {
   return (
-    <section className="newsletter">
+    <section className={`newsletter ${className}`}>
       <h5 className="newsletter__title">Subscribe to our Newsletter</h5>
       <form className="newsletter-form" action="#" method="get">
         <input

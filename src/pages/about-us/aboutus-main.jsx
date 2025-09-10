@@ -4,6 +4,7 @@ import { OfferAboutUs } from "./offer";
 import { TeamAboutUs } from "./team";
 import { CommonBanner } from "../../shared/banner";
 import AboutUsBanner from "../../assets/img/banners/about-bg.jpg";
+import { Newsletter } from "../../shared/newsletter";
 
 export const AboutUsPage = () => {
   return (
@@ -13,6 +14,7 @@ export const AboutUsPage = () => {
           <WhyUsAboutUs />
           <TeamAboutUs />
           <OfferAboutUs />
+          <Newsletter className="aboutus_page__newsletter" />
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { FormContactUs } from "./form";
 import { ContactsContactUs } from "./contacts";
 import { CommonBanner } from "../../shared/banner";
 import ContactBanner from "../../assets/img/banners/contact-bg.jpg";
+import { Newsletter } from "../../shared/newsletter";
 
 export const ContactUsPage = () => {
   return (
@@ -11,6 +12,7 @@ export const ContactUsPage = () => {
         <ContactsContactUs/>
         <FarmsContactUs/>
         <FormContactUs/>
+        <Newsletter />
     </div>
   )
 }

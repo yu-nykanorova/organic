@@ -1,0 +1,24 @@
+.news_page {
+
+    &__news-container {
+        max-width: 1920rem;
+        padding: 0 260rem;
+        margin-inline: auto;
+    }
+
+    &__news-list {
+        margin-top: 5rem;
+        display: grid;
+        gap: 46rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__news-item-card {
+        margin-top: 115rem;
+    }
+
+    &__newsletter {
+        margin-top: 185rem;
+    }
+    
+}

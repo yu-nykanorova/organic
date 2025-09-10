@@ -3,6 +3,7 @@ import { ShopItemAdditional } from './shop_item_additional';
 import { ShopItemToggle } from './shop_item_toggle';
 import { CommonBanner } from "../../shared/banner";
 import ShopSingleBanner from "../../assets/img/banners/shop-single-bg.jpg";
+import { Newsletter } from '../../shared/newsletter';
 
 export const ShopItem = () => {
 
@@ -12,6 +13,7 @@ export const ShopItem = () => {
             <ShopItemCard />
             <ShopItemToggle />
             <ShopItemAdditional />
+            <Newsletter />
         </div>
     )
 }

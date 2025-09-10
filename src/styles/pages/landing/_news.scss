@@ -1,8 +1,6 @@
 @use '../../utils/mixins' as *;
-$newsBgImage1: "/img/news/Salad.png";
-$newsBgImage2: "/img/news/Tomato.png";
 
-.news-lending {
+.news-landing {
     padding: 177rem 0 253rem 0;
     max-width: 1400rem;
     margin-inline: auto;
@@ -63,150 +61,6 @@ $newsBgImage2: "/img/news/Tomato.png";
         gap: 10rem;
     }
 
-    &__item {
-        position: relative;
-        width: 677rem;
-        height: 524rem;
-        border-radius: 30rem;
-        margin: auto;
-        @include tablet{
-            width: 577rem;
-            height: 444rem;
-        }
-        @include mobile {
-            width: 357rem;
-            height: 324rem;
-        }
-      
-
-        &-img {
-            position: absolute;
-            top: 43rem;
-            left: 32rem;
-
-            @include mobile {
-                top: 33rem;
-                left: 27rem;
-            }
-        }
-
-        &-date {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 82rem;
-            height: 82rem;
-            border-radius: 50%;
-            background: var(--white);
-
-            @include mobile {
-                width: 62rem;
-                height: 62rem;
-            }
-
-            p {
-                color: var(--dark-green-color);
-                font-family: var(--font-family);
-                font-weight: 800;
-                font-size: 25rem;
-                text-align: center;
-                line-height: 20rem;
-            }
-
-            span {
-                font-size: 20rem;
-            }
-        }
-
-        &-info {
-            width: 90%;
-            max-width: 613rem;
-            padding: 46rem 57rem 60rem 57rem;
-            top: 262rem;
-            left: 5%;
-            position: absolute;
-            background: var(--white);
-            box-shadow: 0 20rem 35rem 0 rgba(167, 167, 167, 0.25);
-            border-radius: 31rem 34rem 30rem 30rem;
-            @include tablet{
-                max-width: 453rem;
-                left: 5rem;
-            }
-            @include mobile {
-                max-width: 233rem;
-                max-height: 180rem;
-                top: 188rem;
-                padding: 26rem 37rem 40rem 37rem;
-                left: 25rem;
-            }
-
-            &-icon {
-                display: flex;
-                gap: 8rem;
-                align-items: center;
-                margin-bottom: 15rem;
-                @include mobile {
-                    margin-bottom: 7rem;
-                }
-            }
-
-            &-name {
-                font-family: var(--font-family);
-                font-weight: 400;
-                font-size: 18rem;
-                color: var(--dark-green-color);
-            }
-
-            &-title {
-                color: var(--dark-green-color);
-                font-family: var(--font-family);
-                font-weight: 800;
-                font-size: 25rem;
-                margin-bottom: 2rem;
-                @include mobile{
-                    font-size: 20rem;
-                }
-            }
-
-            &-desc {
-                color: var(--black-color);
-                font-family: var(--second-family);
-                font-weight: 400;
-                font-size: 18rem;
-                line-height: 165%;
-                margin-bottom: 6;
-                @include mobile{
-                    font-size: 14rem;
-                }
-            }
-
-            &-btn {
-                text-decoration: none;
-                padding: 28rem 47rem;
-                background: var(--yelow-color);
-                border-radius: 16rem;
-                cursor: pointer;
-                display: inline-flex;
-                align-items: center;
-                gap: 10rem;
-                transition: .2s all ease-in-out;
-                margin-top: 15rem;
-
-                @include mobile{
-                    padding: 8rem 14rem;
-                }
-
-                p {
-                    font-family: var(--font-family);
-                    font-weight: 700;
-                    font-size: 20rem;
-                    color: var(--dark-green-color);
-                }
-            }
-        }
-    }
-
     .arrow-box {
         display: flex;
         justify-content: center;
@@ -223,14 +77,6 @@ $newsBgImage2: "/img/news/Tomato.png";
                 stroke: var(--white);
             }
         }
-    }
-
-    .salad {
-        background: url("#{$newsBgImage1}");
-    }
-    
-    .tomato {
-        background: url("#{$newsBgImage2}");
     }
 }
 
