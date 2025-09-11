@@ -1,0 +1,122 @@
+@use "../../utils/mixins" as *;
+
+.news-item_page {
+
+    &__banner {
+        
+        &-info {
+            padding: 76rem 82rem;
+        }
+
+        &-posted-info {
+            display: flex;
+            align-items: center;
+            gap: 30rem;
+            margin-bottom: 20rem;
+        }
+
+        &-date {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 18rem;
+            color: var(--dark-green-color);
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        &-author {
+            display: flex;
+            align-items: center;
+            gap: 8rem;
+
+            &-icon svg path {
+                fill: var(--green-color);
+            }
+
+            &-name {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 18rem;
+                color: var(--dark-green-color);
+            }
+        }
+
+        &-title {
+            font-family: var(--font-family);
+            font-weight: 800;
+            font-size: 70px;
+            color: var(--dark-green-color);
+            margin-bottom: 20rem;
+        }
+
+        &-desc {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 165%;
+            color: var(--black-color);
+        }
+    }
+
+    &__content {
+        max-width: 936rem;
+        margin-inline: auto;
+
+        p {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 18rem;
+            line-height: 165%;
+            color: var(--black-color);
+        }
+
+        &-intro {
+            margin-top: 80rem;
+            margin-bottom: 22rem;
+        }
+
+        &-title {
+            font-family: var(--font-family);
+            font-weight: 800;
+            font-size: 50px;
+            color: var(--dark-green-color);
+            margin-bottom: 22rem;
+        }
+
+        &-list-paragraph {
+            margin-bottom: 21rem;
+
+            &:nth-child(4), &:nth-child(10) {
+                margin-top: 31rem;
+            }
+        }
+
+        &-quote {
+            margin: 50rem 0;
+            border-radius: 30rem;
+            padding: 69rem 59rem;
+            width: 100%;
+            background: var(--gray-quote-color);
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 20rem;
+            line-height: 165%;
+            text-align: center;
+            color: var(--dark-green-color);
+        }
+
+        &-subheading {
+            font-family: var(--font-family);
+            font-weight: 800;
+            font-size: 35rem;
+            color: var(--dark-green-color);
+            margin-bottom: 24rem;
+        }
+    }
+
+    &__newsletter {
+        margin-top: 121rem;
+    }
+}

@@ -2,20 +2,19 @@
 
 .news-item-card {
     position: relative;
-    width: 677rem;
-    height: 524rem;
+    max-width: 677rem;
+    max-height: 524rem;
     border-radius: 30rem;
     margin: auto;
     @include tablet{
-        width: 577rem;
-        height: 444rem;
+        max-width: 577rem;
+        max-height: 444rem;
     }
     @include mobile {
-        width: 357rem;
-        height: 324rem;
+        max-width: 357rem;
+        max-height: 324rem;
     }
     
-
     &__img {
         width: 100%;
     }
@@ -58,7 +57,7 @@
         width: 90%;
         max-width: 613rem;
         padding: 46rem 57rem 60rem 57rem;
-        top: 262rem;
+        bottom: -65rem;
         left: 5%;
         position: absolute;
         background: var(--white);
@@ -71,13 +70,13 @@
         @include mobile {
             max-width: 233rem;
             max-height: 180rem;
-            top: 188rem;
             padding: 26rem 37rem 40rem 37rem;
             left: 25rem;
         }
 
         &.card-info-news {
-            top: 318rem;
+            height: 283rem;
+            bottom: 0;
         }
 
         &-icon {
@@ -150,6 +149,24 @@
             &.btn-news {
                 background: transparent;
                 padding: 0;
+            }
+            
+            .arrow-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 19rem;
+                height: 19rem;
+                border-radius: 100%;
+                background: var(--dark-green-color-second);
+        
+                .arrow-icon {
+                    display: flex;
+        
+                    svg path {
+                        stroke: var(--white);
+                    }
+                }
             }
         }
     }

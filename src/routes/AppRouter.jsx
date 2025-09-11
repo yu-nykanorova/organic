@@ -11,7 +11,7 @@ import { ServicePage } from "../pages/services/service-main";
 import { QualityStandartPage } from "../pages/quality-stan/quality_stan-main";
 import { ContactUsPage } from "../pages/contact/contact-main";
 import { NewsPage } from "../pages/news/news-main";
-//import { NewsItem } from "../shared/news-item-card";
+import { NewsItem } from "../pages/news/news_item";
 
 export const AppRoutes = () => {
     return (
@@ -23,7 +23,7 @@ export const AppRoutes = () => {
           <Route index={true} path="/shop" element={<ShopPage />} />
           <Route index={true} path="/shop/shop-item/:id" element={<ShopItem />} />
           <Route index={true} path="/news" element={<NewsPage />} />
-          {/* <Route index={true} path="/news/:id" element={<NewsItem />} /> */}
+          <Route index={true} path="/news/:id" element={<NewsItem />} />
           <Route index={true} path="/service" element={<ServicePage />} />
           <Route index={true} path="/quality" element={<QualityStandartPage />} />
           <Route index={true} path="/contact" element={<ContactUsPage />} />

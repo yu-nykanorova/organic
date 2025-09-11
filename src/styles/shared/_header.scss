@@ -14,9 +14,15 @@
     padding: 30rem;
   }
 
-  // @include desktop-small {
-  //   padding: 40rem;
-  // }
+  @include tablet-small {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+
+  @include mobile {
+    padding: 20rem;
+  }
 
   &__backdrop {
     background: rgba(0, 0, 0, 0.5);
@@ -51,9 +57,18 @@
     align-items: center;
     gap: 8rem;
     transition: 0.2s all ease-in-out;
+
+    @include tablet-small {
+      font-size: 28rem;
+    }
+
     & img {
       width: 39rem;
       height: 56rem;
+
+      @include tablet-small {
+        width: 26rem;
+      }
     }
   }
 
@@ -121,9 +136,8 @@
     gap: 18rem;
 
     @include mobile {
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 10rem;
+      gap: 5rem;
+      justify-content: space-between;
     }
   }
 
@@ -143,6 +157,10 @@
 
     @include desktop-small {
       width: 300rem;
+    }
+
+    @include mobile {
+      width: 60%;
     }
 
     &__input {
@@ -167,6 +185,10 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+
+      @include desktop-small {
+        padding: 13rem;
+      }
     }
 
     &__icon {
@@ -185,6 +207,11 @@
     text-decoration: none;
     flex-shrink: 0;
 
+    @include mobile {
+      outline: 0;
+      padding: 5rem;
+    }
+
     &__group {
       background-color: var(--dark-green-color);
       border-radius: 100%;
@@ -192,6 +219,10 @@
       display: flex;
       text-align: center;
       justify-content: center;
+
+      @include desktop-small {
+        padding: 13rem;
+      }
     }
 
     &__icon {
@@ -204,6 +235,10 @@
       font-weight: 600;
       font-size: 18rem;
       color: var(--dark-green-color);
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 
@@ -212,14 +247,6 @@
     top: 40rem;
     right: 40rem;
   }
-
-  // .icon-menu {
-  //   @include tablet {
-  //     position: absolute;
-  //     top: 30rem;
-  //     right: 24rem;
-  //   }  
-  // }
   
   .icon-close,
   .icon-menu {

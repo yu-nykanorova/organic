@@ -4,7 +4,9 @@
         "imageSrc": "/img/news/Salad.png",
         "date": {
             "day": "25",
-            "month": "nov"
+            "month": "nov",
+            "monthFull": "November",
+            "year": "2022"
         },
         "author": "By Rachi Card",
         "title": "The Benefits of Vitamin D & How to Get It",
@@ -15,7 +17,9 @@
         "imageSrc": "/img/news/Tomato.png",
         "date": {
             "day": "25",
-            "month": "nov"
+            "month": "nov",
+            "monthFull": "November",
+            "year": "2022"
         },
         "author": "By Rachi Card",
         "title": "Our Favorite Summertime Tomato",
@@ -26,7 +30,9 @@
         "imageSrc": "/img/news/Carrot_avocado_citrus.png",
         "date": {
             "day": "25",
-            "month": "nov"
+            "month": "nov",
+            "monthFull": "November",
+            "year": "2022"
         },
         "author": "By Rachi Card",
         "title": "Benefits of Vitamin C & How to Get It",
@@ -37,7 +43,9 @@
         "imageSrc": "/img/news/Tree_man.png",
         "date": {
             "day": "25",
-            "month": "nov"
+            "month": "nov",
+            "monthFull": "November",
+            "year": "2022"
         },
         "author": "By Rachi Card",
         "title": "Research More Organic Foods",
@@ -48,7 +56,9 @@
         "imageSrc": "/img/news/Apple_girl.png",
         "date": {
             "day": "25",
-            "month": "nov"
+            "month": "nov",
+            "monthFull": "November",
+            "year": "2022"
         },
         "author": "By Rachi Card",
         "title": "Everyday Fresh Fruites",
@@ -59,7 +69,9 @@
         "imageSrc": "/img/news/Plastic_trash.png",
         "date": {
             "day": "25",
-            "month": "nov"
+            "month": "nov",
+            "monthFull": "November",
+            "year": "2022"
         },
         "author": "By Rachi Card",
         "title": "Don’t Use Plastic Product! it’s Kill Nature",

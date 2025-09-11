@@ -8,11 +8,11 @@ export const CommonBanner = ({ imgSrc, altText }) => {
     )
   }
 
-  CommonBanner.propTypes = {
-    imgSrc: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.object
-    ]).isRequired,
-    altText: PropTypes.string
-  };
+CommonBanner.propTypes = {
+  imgSrc: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]).isRequired,
+  altText: PropTypes.string
+};
   

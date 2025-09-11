@@ -1,24 +1,29 @@
+@use "../../utils/mixins" as *;
+@use "news_item";
+
 .news_page {
 
     &__news-container {
-        max-width: 1920rem;
-        padding: 0 260rem;
+        padding: 0 60rem;
         margin-inline: auto;
     }
 
     &__news-list {
-        margin-top: 5rem;
+        max-width: 1400rem;
+        margin-inline: auto;
+        margin-top: 120rem;
         display: grid;
         gap: 46rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, auto);
     }
 
     &__news-item-card {
-        margin-top: 115rem;
+        padding-bottom: 65rem;
+        max-height: 589rem;
     }
 
     &__newsletter {
-        margin-top: 185rem;
+        margin-top: 120rem;
     }
     
 }

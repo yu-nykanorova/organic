@@ -7,7 +7,7 @@ import { Newsletter } from '../../shared/newsletter';
 
 export const ShopItem = () => {
 
-    return(
+    return (
         <div className="shop_single-item_page">
             <CommonBanner imgSrc={ShopSingleBanner} altText={'ShopSingleBanner'}/>
             <ShopItemCard />
