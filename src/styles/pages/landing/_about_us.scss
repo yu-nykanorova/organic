@@ -119,6 +119,7 @@
   &__btn {
     max-width: 220rem;
     display: flex;
+    align-items: center;
     gap: 10rem;
     border-radius: 16rem;
     padding: 28rem 49rem;
@@ -129,9 +130,27 @@
     font-size: 20rem;
     border: 0;
     margin-top: 46rem;
+
+    .arrow-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 19rem;
+      height: 19rem;
+      border-radius: 100%;
+      background: var(--arrow-bg-color);
+  
+      .arrow-icon {
+          display: flex;
+  
+          svg path {
+              stroke: var(--white);
+          }
+      }
+    }
   }
 
-  .about__paragraph {
+  &__paragraph {
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 18rem;

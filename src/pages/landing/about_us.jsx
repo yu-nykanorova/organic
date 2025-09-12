@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
+import { ArrowIcon } from "../../shared/icons/arrowIcon";
 import Food from "../../assets/img/about/food.svg";
 import Mailbox from "../../assets/img/about/mailbox.svg";
-import Arrow from "../../assets/img/about/arrow.svg";
 import Fruit from "../../assets/img/about/fruit.png";
 
 export const AboutUsLanding = () => {
@@ -43,9 +44,12 @@ export const AboutUsLanding = () => {
             </p>
           </div>
         </div>
-        <a href="/Shop" className="about__btn" type="submit">
-          Shop Now <img src={Arrow} alt="arrow" />
-        </a>
+        <Link to="/Shop" className="about__btn" type="submit">
+          <p>Shop Now</p>
+          <div className="arrow-box">
+            <ArrowIcon className="arrow-icon" />
+          </div>
+        </Link>
       </div>
     </div>
   )

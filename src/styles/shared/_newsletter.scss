@@ -58,7 +58,7 @@ $newsletterBgImage: "/img/newsletter_bg.jpg";
       font-size: 18rem;
       color: var(--black-color);
       &::placeholder {
-        color: var(--c-placeholder);
+        color: var(--placeholder);
       }
       @include tablet {
         padding: 16rem 11rem;

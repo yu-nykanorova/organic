@@ -1,6 +1,7 @@
 @use '../../utils/mixins' as *;
 
 .products{
+    margin-top: 163rem;
     padding: 0 0 200rem;
 
     @include tablet {
@@ -23,7 +24,7 @@
     h2 {
         color: var(--dark-green-color);
         text-align: center;
-        margin-bottom: 70rem;
+        margin-bottom: 40rem;
 
         @include mobile {
             margin-bottom: 50rem;

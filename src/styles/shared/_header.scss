@@ -166,8 +166,9 @@
     &__input {
       border: 0;
       outline: 0;
+      padding: 10rem;
       background: transparent;
-      width: 70%;
+      width: 80%;
       font-family: var(--font-family);
       font-weight: 700;
       font-size: 16rem;
@@ -253,6 +254,7 @@
     width: 40rem;
     height: 40rem;
     display: none;
+    cursor: pointer;
 
     @include desktop-small {
       display: block;
@@ -285,8 +287,9 @@
   position: absolute;
   top: 100%;
   left: 50%;
+  padding: 10rem 0;
   transform: translateX(-50%);
-  background-color: var(--light-gray-color);
+  background-color: var(--green-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 20;
   overflow: hidden;
@@ -304,9 +307,9 @@
     padding: 10rem 30rem;
     text-decoration: none;
     font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 20rem;
-    color: var(--dark-green-color);
+    font-weight: 400;
+    font-size: 18rem;
+    color: var(--white);
     transition: 0.2s all ease-in-out;
   }
 

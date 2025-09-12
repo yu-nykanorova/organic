@@ -2,10 +2,10 @@
 import { Link } from 'react-router-dom';
 import { RatingStar } from './rating';
 
-export const ProductCard = ({ item }) => {
+export const ProductCard = ({ item, className }) => {
 
     return (
-        <Link to={`/shop/shop-item/${item.id}`}>
+        <Link to={`/shop/shop-item/${item.id}`} className={ className }>
             <div className='card' style={{ backgroundImage: `url(${item.image.src})` }}>
                 <label>{item.item.type}</label>
                 <div className='card__panel'>

@@ -1,3 +1,7 @@
+#root {
+	height: 100%;
+}
+
 html {
 	scroll-behavior: smooth;
 	font-size: 1px;
@@ -6,10 +10,11 @@ html {
 html,body {
 	height: 100%;
 }
+
 body {
 	font-size: 16rem;
 }
 
-#root {
-	height: 100%;
+a {
+	text-decoration: none;
 }
