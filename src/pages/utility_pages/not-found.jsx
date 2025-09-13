@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Arrow from "../../assets/img/about/arrow.svg";
 import Photo from "../../assets/img/not-found/Photo.png";
 
@@ -14,9 +15,9 @@ export const PageNotFound = () => {
           <div className="notfound__desc">
             The page you are looking for doesn&#39;t exist or has been moved
           </div>
-          <a className="notfound__a" type="submit" href="/">
+          <Link className="notfound__a" type="submit" to="/">
             Go to Homepage <img src={Arrow} alt="arrow" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

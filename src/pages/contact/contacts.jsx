@@ -17,16 +17,16 @@ export const ContactsContactUs = () => {
           <span className='contact-title-block__info-desc'>Simply dummy text of the printing and typesetting industry. Lorem had ceased to 
 been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley.</span>
           <div className="contact-title-block__info-for_contact">
-            <div className="contact-title-block__info-for_contact-block">
+            <a className="contact-title-block__info-for_contact-block" href="mailto:support@organic.com">
               <div className="contact-title-block__info-for_contact-block-image">
                 <img src={ContactMessage} alt="message" />
               </div>
               <div className="contact-title-block__info-for_contact-block-desc">
-                <p>Massege</p>
+                <p>Message</p>
                 <span>support@organic.com</span>
               </div>
-            </div>
-            <div className="contact-title-block__info-for_contact-block">
+            </a>
+            <a className="contact-title-block__info-for_contact-block" href="tel:+01123456789">
               <div className="contact-title-block__info-for_contact-block-image">
                 <img src={ContactPhone} alt="phone" />
               </div>
@@ -34,7 +34,7 @@ been the industry&apos;s standard dummy text ever since the 1500s, when an unkno
                 <p>Contact Us</p>
                 <span>+01 123 456 789</span>
               </div>
-            </div>
+            </a>
           </div>
           <div className="contact-title-block__info-socials">
             <a href="#"><img src={ContactInstagram} alt="" /></a>

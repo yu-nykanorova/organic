@@ -17,7 +17,7 @@
         font-weight: 400;
         font-size: 36rem;
         color: var(--green-color);
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
     }
 
     &__title {
@@ -177,14 +177,16 @@
     }
 
     &__button {
+        max-width: 220rem;
         background: var(--gray-color-third);
         border: 2px solid var(--dark-green-color-second);
         border-radius: 16rem;
-        padding: 28rem 36rem;
+        padding: 24rem 34rem;
         cursor: pointer;
         display: inline-flex;
         align-items: center;
-        gap: 10rem;
+        gap: 7rem;
+        margin-top: 80rem;
         transition: .2s all ease-in-out;
 
         &:hover {

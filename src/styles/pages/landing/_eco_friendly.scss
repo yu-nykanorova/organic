@@ -4,33 +4,41 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    position: relative;
+
     @include tablet {
         flex-direction: column;
-
       }
   
     &__photo {
-        width: 100%;
         max-width: 952rem;
         max-height: 931rem;
-        @include desktop-for-eco_friendly{
+
+        @include desktop-for-eco_friendly {
             max-width: 850rem;
         }
     }
   
     &__container {
+        position: absolute;
         max-width: 789rem;
+        left: 871rem;
         display: flex;
         flex-direction: column; 
-        margin-left: -81rem;
         border-radius: 30rem;
         background-color: var(--white);
-        padding: 78rem 89rem 42rem 89rem;
-        @include desktop-for-eco_friendly{
-            margin-left: -120rem;
+        padding: 78rem 89rem 77rem 89rem;
+
+        @include desktop-for-header {
+          left: 50%;
+          padding: 60rem;
         }
-        @include desktop-small{
-            margin-left: -290rem;
+
+        @include desktop-for-eco_friendly {
+            //margin-left: -120rem;
+        }
+        @include desktop-small {
+            //margin-left: -290rem;
         }
 
         @include tablet {

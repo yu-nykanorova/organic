@@ -119,7 +119,6 @@ export const FormContactUs = () => {
           <button className="form__button" type="submit">
             Send Message
           </button>
-
           {formError && <div className="error">{formError}</div>}
         </div>
       </form>

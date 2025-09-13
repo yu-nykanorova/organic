@@ -57,10 +57,14 @@
   }
 
   &__btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
     background: var(--green-color);
     border-radius: 100%;
-    padding: 41rem 40rem 41rem 45rem;
+    box-shadow: -4px 10px 12px 0 #dbd1b5;
+    padding: 41rem 40rem 40rem 44rem;
     border: none;
     color: inherit;
     cursor: pointer;

@@ -26,9 +26,11 @@ export const QualityStandartPage = () => {
             in their infancy. Various versions have evolved over the years
           </p>
           <div className="quality__container">
-            <div className="quality__item">
-              <img className="quality-item__img" src={Seedlings} alt="Image" />
-              <div className="quality-container__title">
+            <div className="quality__container-item">
+              <div className="quality__container-item-img">
+                <img  src={Seedlings} alt="Image" />
+              </div>
+              <div className="quality__container-item-title">
                 Why Organic
                 <p className="quality__paragraph">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptat.
@@ -37,9 +39,11 @@ export const QualityStandartPage = () => {
                 </p>
               </div>
             </div>
-            <div className="quality__item">
-              <img className="quality-item__img" src={Pots} alt="pots" />
-              <div className="quality-container__title">
+            <div className="quality__container-item">
+              <div className="quality__container-item-img">
+                <img  src={Pots} alt="Image" />
+              </div>
+              <div className="quality__container-item-title">
               Speciality Produce
                 <p className="quality__paragraph">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptat.
@@ -59,13 +63,13 @@ export const QualityStandartPage = () => {
             </p>
             <div className="quality__advantages-box">
               <div className="quality__advantages-item">
-                <div className="quality__advantages-number">1</div>
+                <div className="quality__advantages-number">01</div>
                 <div className="quality__advantages-desc">
                   <h6>Best quality support</h6>
                 </div>
               </div>
               <div className="quality__advantages-item">
-                <div className="quality__advantages-number">2</div>
+                <div className="quality__advantages-number">02</div>
                 <div className="quality__advantages-desc">
                   <h6> Money back guarantee</h6>
                 </div>

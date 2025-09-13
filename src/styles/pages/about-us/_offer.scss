@@ -1,59 +1,66 @@
 @use '../../utils/mixins' as *;
 
-.offerAbout {
+.offer-about {
   background: var(--dark-green-color);
-  padding: 188rem 10rem;
+  padding: 188rem 20rem;
 
   @include tablet-small {
     padding: 150rem 20rem;
   }
-}
 
-.offerAboutInfo {
-  text-align: center;
-  &__title {
-    font-family: var(--third-family);
-    font-weight: 400;
-    font-size: 36rem;
-    color: var(--green-color);
-    padding-bottom: 8rem;
-  }
+  &__info {
+    text-align: center;
 
-  &__description {
-    color: var(--white);
-    padding-bottom: 33rem;
+    &-title {
+      font-family: var(--third-family);
+      font-weight: 400;
+      font-size: 36rem;
+      color: var(--green-color);
+      padding-bottom: 8rem;
+    }
+  
+    &-description {
+      color: var(--white);
+      padding-bottom: 33rem;
+  
+      @include mobile {
+        font-size: 35rem;
+      }
+    }
+  }  
 
-    @include mobile {
-      font-size: 35rem;
+  &__cards {
+    margin-inline: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 21rem;
+  
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      text-align: center;
+      border-radius: 30rem;
+  
+      &-img img {
+        width: 100%;
+      }
+    
+      &-title {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 25rem;
+        color: var(--white);
+        margin-top: 24rem;
+      }
     }
   }
 }
 
-.offerAboutCards {
-  margin-inline: auto;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  gap: 21rem;
 
-  @include tablet {
-    flex-wrap: wrap;
-  }
-}
 
-img {
-  max-width: 100%;
-}
 
-.offerAboutCard {
-  text-align: center;
-  border-radius: 30rem;
 
-  &__title {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 25rem;
-    color: var(--white);
-    margin-top: 24rem;
-  }
-}
+

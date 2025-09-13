@@ -5,6 +5,10 @@
     max-width: 1400rem;
     margin-inline: auto;
 
+    @include desktop-for-header {
+        padding-inline: 20rem;
+    }
+
     &__row {
         display: flex;
         align-items: center;
@@ -59,6 +63,10 @@
         justify-content: center;
         margin: auto;
         gap: 46rem;
+
+        @include desktop-for-header {
+            grid-template-columns: repeat(auto-fill, minmax(450rem, 1fr));
+        }
     }
 
     .arrow-box {

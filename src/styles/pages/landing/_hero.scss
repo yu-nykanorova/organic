@@ -148,6 +148,12 @@
         padding: 247rem 0 246rem 260rem;
         max-width: 790rem;
         z-index: 2;
+        @include desktop-for-header {
+            padding: 150rem 0 150rem 150rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         @include desktop-small {
             padding: 120rem 70rem 80rem;
             max-width: 700rem;  
@@ -210,7 +216,10 @@
             }
             
         }
-
+        @include desktop-for-header {
+            max-width: 45%;
+            justify-content: space-between;
+        }
         @include tablet-small {
             padding: 24rem 35rem;
         }
@@ -240,7 +249,6 @@
 
     &__image {
         display: flex;
-        justify-content: center;
         z-index: 2;
         overflow: hidden;
         width: 100%;

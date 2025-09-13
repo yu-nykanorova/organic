@@ -8,6 +8,13 @@ $testimonialBgImage: "/img/testimonial_bg.png";
   align-items: center;
   padding-top: 164rem;
   background-image: url("#{$testimonialBgImage}");
+  background-position: center;   
+  background-size: cover;       
+  background-repeat: no-repeat; 
+
+  @include desktop-for-eco_friendly {
+    padding-top: 80rem;
+  }
 
   &__pretitle {
     font-family: var(--third-family);
@@ -46,6 +53,10 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     grid-column-gap: 62rem;
     grid-row-gap: 62rem;
 
+    @include desktop-for-eco_friendly {
+      padding: 60rem 0;
+    }
+
     @include desktop-small {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -67,6 +78,10 @@ $testimonialBgImage: "/img/testimonial_bg.png";
       font-weight: 800;
       font-size: 50rem;
       color: var(--dark-green-color);
+
+      @include desktop-for-eco_friendly {
+        font-size: 40rem;
+      }
 
       @include mobile {
         font-size: 30rem;
@@ -98,6 +113,7 @@ $testimonialBgImage: "/img/testimonial_bg.png";
   }
 
   &__img {
+    max-width: 115rem;
     margin-bottom: 20rem;
     border-radius: 100%;
   }
@@ -145,13 +161,18 @@ $testimonialBgImage: "/img/testimonial_bg.png";
 }
 
 .outer-circle {
-  width: 211rem; /* Розмір зовнішнього круга */
+  width: 211rem; 
   height: 211rem;
   border: 5rem solid var(--green-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include desktop-for-eco_friendly {
+    width: 160rem;
+    height: 160rem;
+  }
 
   @include mobile {
     width: 122rem;
@@ -160,13 +181,18 @@ $testimonialBgImage: "/img/testimonial_bg.png";
 }
 
 .inner-circle {
-  width: 189rem; /* Розмір внутрішнього круга */
+  width: 189rem; 
   height: 189rem;
   background-color: var(--light-white);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include desktop-for-eco_friendly {
+    width: 138rem;
+    height: 138rem;
+  }
 
   @include mobile {
     width: 109rem;

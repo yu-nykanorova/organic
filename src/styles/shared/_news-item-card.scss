@@ -63,15 +63,18 @@
         background: var(--white);
         box-shadow: 0 20rem 35rem 0 rgba(167, 167, 167, 0.25);
         border-radius: 31rem 34rem 30rem 30rem;
+        @include desktop-for-header {
+            padding: 45rem;
+        }
+        @include desktop-for-eco_friendly {
+            padding: 30rem;
+        }
         @include tablet{
             max-width: 453rem;
-            left: 5rem;
         }
         @include mobile {
             max-width: 233rem;
             max-height: 180rem;
-            padding: 26rem 37rem 40rem 37rem;
-            left: 25rem;
         }
 
         &.card-info-news {
@@ -106,6 +109,9 @@
             font-weight: 800;
             font-size: 25rem;
             margin-bottom: 2rem;
+            @include desktop-for-eco_friendly {
+                font-size: 22rem;
+            }
             @include mobile{
                 font-size: 20rem;
             }
@@ -118,6 +124,9 @@
             font-size: 18rem;
             line-height: 165%;
             margin-bottom: 6;
+            @include desktop-for-eco_friendly {
+                font-size: 16rem;
+            }
             @include mobile{
                 font-size: 14rem;
             }
@@ -134,7 +143,9 @@
             gap: 10rem;
             transition: .2s all ease-in-out;
             margin-top: 15rem;
-
+            @include desktop-for-eco_friendly {
+                padding: 22rem 40rem;
+            }
             @include mobile{
                 padding: 8rem 14rem;
             }

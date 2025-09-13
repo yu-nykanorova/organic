@@ -3,6 +3,11 @@
 .organic {
     padding: 187rem 0;
     background-color: var(--light-green-color);
+
+    @include desktop-for-header {
+        padding: 150rem 0;
+    }
+
     @include tablet {
         margin: 96rem 0;
     }

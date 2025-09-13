@@ -2,7 +2,8 @@ $farmsBgImage: "src/assets/img/contacts/farms-bg.jpg";
 @use '../../utils/mixins' as *;
 
 .farms {
-    margin: 90rem 0;
+    max-width: 1400rem;
+    margin: 90rem auto 0;
     padding: 0 108rem;
     background-image: url("#{$farmsBgImage}");
     background-size: cover;
@@ -23,7 +24,7 @@ $farmsBgImage: "src/assets/img/contacts/farms-bg.jpg";
     }
 
     &__text {
-        max-width: 408rem;
+        max-width: 514rem;
         padding: 46rem 53rem;
         background: var(--white);
         border-radius: 30rem;

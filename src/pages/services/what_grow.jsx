@@ -1,10 +1,10 @@
 import whatGrowPoster from '../../assets/img/service/what_grow_poster.png';
-import delivery from '../../assets/img/service/service-icons/delivery.png';
-import leaves from '../../assets/img/service/service-icons/leaves.png';
-import milkBottle from '../../assets/img/service/service-icons/milk_bottle.png';
-import radish from '../../assets/img/service/service-icons/radish.png';
-import store from '../../assets/img/service/service-icons/store.png';
-import vegetBag from '../../assets/img/service/service-icons/veget_bag.png';
+import delivery from '../../assets/img/service/service-icons/delivery.svg';
+import leaves from '../../assets/img/service/service-icons/leaves.svg';
+import milkBottle from '../../assets/img/service/service-icons/milk_bottle.svg';
+import radish from '../../assets/img/service/service-icons/radish.svg';
+import store from '../../assets/img/service/service-icons/store.svg';
+import vegetBag from '../../assets/img/service/service-icons/veget_bag.svg';
 
 export const WhatGrowService = () => {
     return (
