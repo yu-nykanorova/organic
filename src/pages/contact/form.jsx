@@ -46,7 +46,6 @@ export const FormContactUs = () => {
     } else if (emailError) {
       setFormError("Please correct the errors in the form");
     } else {
-      // Додаткова логіка для відправлення форми
       console.log("Form submitted successfully!");
     }
   };
@@ -55,9 +54,11 @@ export const FormContactUs = () => {
     <section className="contact__form">
       <form className="form" onSubmit={handleSubmit}>
         <div className="form__group">
-          <label htmlFor="" className="field">
+          <label htmlFor="fullName" className="field">
             <div className="field__title">Full Name*</div>
             <input
+              id="fullName"
+              name="user_fullName"
               type="text"
               className="field__input"
               placeholder="Your Full Name"
@@ -66,13 +67,15 @@ export const FormContactUs = () => {
             />
           </label>
 
-          <label htmlFor="" className="field">
+          <label htmlFor="email" className="field">
             <div className="field__title">
               Your Email*{" "}
               {emailError && <div className="error">{emailError}</div>}
             </div>
             <input
-              type="text"
+              id="email"
+              name="user_email"
+              type="email"
               className="field__input"
               placeholder="example@yourmail.com"
               value={email}
@@ -80,9 +83,11 @@ export const FormContactUs = () => {
             />
           </label>
 
-          <label htmlFor="" className="field">
+          <label htmlFor="company" className="field">
             <div className="field__title">Company*</div>
             <input
+              id="company"
+              name="user_company"
               type="text"
               className="field__input"
               placeholder="Your company name here"
@@ -91,9 +96,11 @@ export const FormContactUs = () => {
             />
           </label>
 
-          <label htmlFor="" className="field">
+          <label htmlFor="subject" className="field">
             <div className="field__title">Subject*</div>
             <input
+              id="subject"
+              name="user_subject"
               type="text"
               className="field__input"
               placeholder="How can we help?"
@@ -103,11 +110,11 @@ export const FormContactUs = () => {
           </label>
         </div>
 
-        <label htmlFor="" className="field">
+        <label htmlFor="message" className="field">
           <div className="field__title">Message*</div>
           <textarea
-            name=""
-            id=""
+            id="message"
+            name="user_message"
             className="field__input field__textarea"
             placeholder="Hello there, I would like to talk about how to..."
             value={message}
