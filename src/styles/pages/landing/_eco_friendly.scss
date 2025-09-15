@@ -20,35 +20,26 @@
     }
   
     &__container {
-        position: absolute;
-        max-width: 789rem;
-        left: 871rem;
-        display: flex;
-        flex-direction: column; 
-        border-radius: 30rem;
-        background-color: var(--white);
-        padding: 78rem 89rem 77rem 89rem;
+      position: absolute;
+      max-width: 789rem;
+      left: 871rem;
+      display: flex;
+      flex-direction: column; 
+      border-radius: 30rem;
+      background-color: var(--white);
+      padding: 78rem 89rem 77rem 89rem;
 
-        @include desktop-for-header {
-          left: 50%;
-          padding: 60rem;
-        }
+      @include desktop-for-header {
+        left: 50%;
+        padding: 60rem;
+      }
 
-        @include desktop-for-eco_friendly {
-            //margin-left: -120rem;
-        }
-        @include desktop-small {
-            //margin-left: -290rem;
-        }
-
-        @include tablet {
-            margin: -81rem 30rem 0 30rem;
-            padding: 58rem 59rem 12rem 59rem;
-        }
-        @include mobile{
-            margin: -130rem 15rem 0 15rem;
-            padding: 38rem 30rem 0 30rem;
-          }
+      @include tablet {
+        max-width: 90%;
+        left: 5%;
+        top: 20%;
+        padding: 30rem;
+      }
     }
   
     &__header {
@@ -75,6 +66,10 @@
       @include desktop-small{
         font-size: 36rem;
       }
+      @include tablet {
+        max-width: 100%;
+        margin-bottom: 20rem;
+      }
       @include mobile{
         font-size: 26rem;
       }
@@ -82,6 +77,10 @@
   
     &__point {
       margin-bottom: 35rem;
+
+      @include tablet {
+        margin-bottom: 10rem;
+      }
     }
   
     &__link {

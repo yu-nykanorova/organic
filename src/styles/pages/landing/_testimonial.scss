@@ -6,7 +6,7 @@ $testimonialBgImage: "/img/testimonial_bg.png";
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 164rem;
+  padding: 164rem 20rem 0 20rem;
   background-image: url("#{$testimonialBgImage}");
   background-position: center;   
   background-size: cover;       
@@ -42,6 +42,10 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     height: 0;
     margin: 0 auto;
     margin-top: 102rem;
+
+    @include desktop-small {
+      margin-top: 60rem;
+    }
   }
 
   &__group {
@@ -50,15 +54,15 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 62rem;
-    grid-row-gap: 62rem;
+    gap: 62rem;
 
     @include desktop-for-eco_friendly {
       padding: 60rem 0;
     }
 
     @include desktop-small {
-      grid-template-columns: repeat(2, 1fr);
+      padding: 60rem 0;
+      gap: 40rem;
     }
 
     @include mobile {
@@ -81,6 +85,10 @@ $testimonialBgImage: "/img/testimonial_bg.png";
 
       @include desktop-for-eco_friendly {
         font-size: 40rem;
+      }
+
+      @include desktop-for-eco_friendly {
+        font-size: 32rem;
       }
 
       @include mobile {
@@ -174,10 +182,15 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     height: 160rem;
   }
 
-  @include mobile {
-    width: 122rem;
-    height: 122rem;
+  @include desktop-small {
+    width: 128rem;
+    height: 128rem;
   }
+
+  // @include mobile {
+  //   width: 122rem;
+  //   height: 122rem;
+  // }
 }
 
 .inner-circle {
@@ -194,13 +207,23 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     height: 138rem;
   }
 
-  @include mobile {
-    width: 109rem;
-    height: 109rem;
+  @include desktop-small {
+    width: 115rem;
+    height: 115rem;
   }
+
+  // @include mobile {
+  //   width: 109rem;
+  //   height: 109rem;
+  // }
 }
 .testimonial__slider-container {
   position: relative;
   width: 60%;
   margin: 0 auto;
+
+  @include desktop-small {
+    width: 100%;
+    padding: 0 20rem;
+  }
 }

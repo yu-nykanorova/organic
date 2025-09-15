@@ -4,8 +4,11 @@
   background: var(--dark-green-color);
   padding: 188rem 20rem;
 
-  @include tablet-small {
+  @include desktop-for-eco_friendly {
     padding: 150rem 20rem;
+  }
+  @include desktop-small {
+    padding: 120rem 20rem;
   }
 
   &__info {

@@ -1,0 +1,43 @@
+.under-construction {
+    height: 40%;
+    padding: 20% 10%;
+    text-align: center;
+    
+    &__title {
+        font-family: var(--font-family);
+        color: var(--error);
+        font-size: 40rem;
+        margin-bottom: 30rem;
+    }
+
+    &__link {
+        display: block;
+        max-width: 200rem;
+        position: relative;
+        margin-inline: auto;
+        font-family: var(--font-family);
+        color: var(--dark-green-color);
+        font-size: 20rem;
+        transition: all 0.2s ease-in-out;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 80%;
+            height: 2rem;
+            left: 10%;
+            background: var(--dark-green-color);
+            transition: all 0.2s ease-in-out;
+            transform: scale(0);
+        }
+
+        &:hover {
+            font-weight: 500;
+
+            &:after {
+                transform: scale(1);
+            }
+        }
+    }
+}

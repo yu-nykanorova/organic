@@ -10,6 +10,7 @@
     padding: 0 20rem;
   }
   @include desktop-small {
+    margin-top: 100rem;
     gap: 30rem;
   }
   @include tablet {
@@ -25,8 +26,9 @@
     border-radius: 20rem;
     width: 46%;
 
-    @include tablet {
+    @include desktop-small {
       width: 100%;
+      flex: 0 0 50%;
       display: flex;
       justify-content: center;
     }

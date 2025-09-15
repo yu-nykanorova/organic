@@ -69,8 +69,9 @@
         @include desktop-for-eco_friendly {
             padding: 30rem;
         }
-        @include tablet{
-            max-width: 453rem;
+        @include tablet {
+            padding: 20rem;
+            bottom: -20rem;
         }
         @include mobile {
             max-width: 233rem;
@@ -80,6 +81,11 @@
         &.card-info-news {
             height: 283rem;
             bottom: 0;
+
+            @include desktop-small {
+                padding: 20rem;
+                height: 250rem;
+            }
         }
 
         &-icon {
@@ -146,7 +152,10 @@
             @include desktop-for-eco_friendly {
                 padding: 22rem 40rem;
             }
-            @include mobile{
+            @include tablet {
+                padding: 20rem 40rem;
+            }
+            @include mobile {
                 padding: 8rem 14rem;
             }
 

@@ -5,20 +5,24 @@
     justify-content: center;
     padding: 190rem 30rem;
     background-color: #f9f8f8;
-    @include tablet{
-        padding: 130rem 30rem;
+    @include desktop-for-eco_friendly {
+        padding: 140rem 20rem;
     }
-    @include tablet-small{
-        padding: 100rem 30rem;
+    @include desktop-small{
+        padding: 100rem 20rem;
     }
     &__main{
         display: flex;
         justify-content: center;
         gap: 51rem;
         align-items: center;
-        @include desktop-small{
+        @include desktop-small {
             flex-direction: column;
         }
+        @include tablet {
+            gap: 30rem;
+        }
+
         &-contact{
             &-header{
                 font-family: var(--third-family);
@@ -44,10 +48,10 @@
                     text-align: center;
                     max-width: 1200rem;
                 }
-                @include tablet-small{
-                    font-size: 44rem;
+                @include tablet {
+                    font-size: 46rem;
                 }
-                @include mobile{
+                @include mobile {
                     font-size: 32rem;
                 }
 
@@ -56,11 +60,14 @@
                 max-width: 671rem;
                 color: var(--black-color);
                 margin-bottom: 36rem;
-                @include desktop-small{
+                @include desktop-small {
                     text-align: center;
                     max-width: 1200rem;
                 }
-                @include tablet-small{
+                @include tablet {
+                    margin-bottom: 20rem;
+                }
+                @include tablet-small {
                     font-size: 14rem;
                 }
             }
@@ -90,10 +97,10 @@
                 margin-bottom: 12rem;
                 @include desktop-small{
                     margin: auto;
+                    padding: 23rem 85rem 23rem 21rem;
                 }
                 @include tablet-small{
                     max-width: 220rem;
-                    padding: 23rem 85rem 23rem 21rem;
                 }
                 &-icon{
                     color: var(--green-color);
@@ -117,6 +124,15 @@
             width: 100%;
             max-width: 678rem;
             max-height: 579rem;
+
+            @include desktop-small {
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 500rem;
+            }
+            @include tablet {
+                max-height: 300rem;
+            }
         }
     }
 
@@ -131,19 +147,32 @@
             display: flex;
             justify-content: space-between;
             gap: 30rem;
+            flex-wrap: wrap;
+
             @include desktop-small{
-                display: grid;
-                grid-template-columns: auto auto;
-                gap: 20rem;
+                gap: 10rem;
             }
-            @include mobile{
-                grid-template-columns: auto;
+            @include tablet {
+                justify-content: space-evenly;
             }
             &-info{
                 border-radius: 30rem;
                 max-width: 257rem;
                 padding: 50rem 38rem 19rem 35rem;
                 background-color: var(--white);
+
+                @include desktop-small{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    padding: 20rem;
+                }
+
+                @include tablet {
+                    flex: 0 0 calc((100% - 10rem) / 2);
+                }
+                
                 &-icon{
                     display: flex;
                     justify-content: center;
@@ -183,4 +212,7 @@
 }
 .secured{
     padding: 50rem 25rem 19rem 26rem;
+    @include desktop-small{
+        padding: 20rem;
+    }
 }

@@ -8,25 +8,43 @@
     align-items: center;
     padding: 189rem 20rem;
 
+    @include desktop-for-eco_friendly {
+      padding: 140rem 20rem;
+    }
+
     @include desktop-small {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 90rem 30rem;
-
+      padding: 90rem 20rem 60rem 20rem;
     }
   }
 
   &__img {
     max-width: 911rem;
 
+    @include desktop-small {
+      width: 100%;
+      max-height: 500rem;
+      display: flex;
+      justify-content: center;
+    }
+    
+    @include tablet {
+      max-height: 300rem;
+    }
+    
     img {
       width: 100%;
-    }
-
-    @include tablet {
-      padding: 20rem;
-      max-width: auto;
+      @include desktop-small {
+        height: 100%;
+        max-height: 500rem;
+        width: auto;
+        transform: scale(1.2);
+      }
+      @include tablet {
+        max-height: 300rem;
+      }
     }
   }
 
@@ -34,7 +52,8 @@
     max-width: 702rem;
 
     @include desktop-small {
-      padding: 20rem;
+      max-width: 100%;
+      padding: 20rem 0;
       margin-inline: auto;
     }
   }
@@ -47,7 +66,10 @@
     margin-bottom: 8rem;
 
     @include desktop-small {
+      position: relative;
       font-size: 32rem;
+      text-align: center;
+      z-index: 2;
     }
 
     @include mobile {
@@ -63,6 +85,7 @@
 
     @include desktop-small {
       font-size: 46rem;
+      text-align: center;
     }
 
     @include desktop-small {
@@ -80,9 +103,13 @@
     align-items: center;
     margin-bottom: 58rem;
 
-    @include mobile {
+    @include desktop-small {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 20rem;
+    }
+    @include tablet {
       flex-direction: column;
-
     }
   }
 
@@ -120,9 +147,30 @@
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 20rem;
-    max-width: 220rem;
     margin-top: 46rem;
     max-width: 226rem;
+
+    @include desktop-small {
+      margin: 40rem auto 0;
+    }
+
+    .arrow-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 19rem;
+      height: 19rem;
+      border-radius: 100%;
+      background: var(--dark-green-color-second);
+
+      .arrow-icon {
+        display: flex;
+
+        svg path {
+            stroke: var(--white);
+        }
+      }
+    }
   }
 
   &__paragraph {

@@ -1,7 +1,8 @@
 import Plant from "../../assets/img/about/plant.svg";
 import Tractor from "../../assets/img/about/tractor.svg";
-import Arrow from "../../assets/img/about/arrow.svg";
 import Plate from "../../assets/img/about/plate.png";
+import { Link } from "react-router-dom";
+import { ArrowIcon } from "../../shared/icons/arrowIcon";
 
 export const AboutUsAboutUs = () => {
 
@@ -45,9 +46,12 @@ export const AboutUsAboutUs = () => {
             </h6>
           </div>
         </div>
-        <a href="/Shop" className="about_us__btn" type="submit">
-          Explore More <img src={Arrow} alt="arrow" />
-        </a>
+        <Link to="/service" className="about_us__btn" type="submit">
+          Explore More
+          <div className="arrow-box">
+            <ArrowIcon className="arrow-icon" />
+          </div>
+        </Link>
       </div>
     </div>
   )

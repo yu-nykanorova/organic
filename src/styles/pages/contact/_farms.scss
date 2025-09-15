@@ -14,9 +14,13 @@ $farmsBgImage: "src/assets/img/contacts/farms-bg.jpg";
     justify-content: right;
     height: 758rem;
 
+    @include desktop-small {
+        height: 100%;
+        padding: 60rem 20rem;
+    }
     @include tablet {
         justify-content: center;
-        padding: 0 26rem;
+        
     }
 
     @include mobile {

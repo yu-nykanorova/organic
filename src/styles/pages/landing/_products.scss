@@ -4,8 +4,17 @@
     margin-top: 163rem;
     padding: 0 0 200rem;
 
+    @include desktop-for-eco_friendly {
+        margin-top: 120rem;
+        padding: 0 0 100rem;
+    }
+
+    @include desktop-small {
+        padding: 0 0 60rem;
+    }
+
     @include tablet {
-        padding: 160rem 10rem 90rem;
+        margin-top: 80rem;
     }
 
     @include mobile {
@@ -63,6 +72,10 @@
         -moz-transition: ease-in-out 1s;
         -ms-transition: ease-in-out 1s;
         -o-transition: ease-in-out 1s;
+
+        @include desktop-for-eco_friendly {
+            margin-top: 80rem;
+        }
     
         @include mobile {
             margin: 76rem auto 0;

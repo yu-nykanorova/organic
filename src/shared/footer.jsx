@@ -3,6 +3,7 @@ import Instagram from "../assets/img/footer/instagram.svg";
 import Facebook from "../assets/img/footer/facebook.svg";
 import Twitter from "../assets/img/footer/twitter.svg";
 import Pinterest from "../assets/img/footer/pinterest.svg";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -55,21 +56,21 @@ export const Footer = () => {
         </div>
         <div className="footer-pages">
           <h6 className="footer-title footer-pages__title">Utility Pages</h6>
-          <a className="footer-pages__link" href="/">
+          <Link className="footer-pages__link" to="/style-guide">
             Style Guide
-          </a>
-          <a className="footer-pages__link" href="/">
+          </Link>
+          <Link className="footer-pages__link" to="*">
             404 Not Found
-          </a>
-          <a className="footer-pages__link" href="/">
+          </Link>
+          <Link className="footer-pages__link" to="/password-protected">
             Password Protected
-          </a>
-          <a className="footer-pages__link" href="/">
+          </Link>
+          <Link className="footer-pages__link" to="/licences">
             Licences
-          </a>
-          <a className="footer-pages__link" href="/">
+          </Link>
+          <Link className="footer-pages__link" to="/changelog">
             Changelog
-          </a>
+          </Link>
         </div>
       </footer>
       <p className="footer__copyright">

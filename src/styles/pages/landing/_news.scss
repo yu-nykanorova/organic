@@ -9,15 +9,25 @@
         padding-inline: 20rem;
     }
 
+    @include desktop-for-eco_friendly {
+        padding: 120rem 20rem 200rem;
+    }
+
+    @include tablet {
+        padding: 80rem 20rem 120rem;
+        text-align: center;
+    }
+
     &__row {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 48px;
 
-        @include mobile {
+        @include desktop-small {
             flex-direction: column;
-            text-align: center;
+            align-items: flex-start;
+            gap: 20rem;
         }
     }
 
@@ -48,6 +58,11 @@
         border: 2rem solid var(--dark-green-color);
         text-decoration: none;
         transition: .2s all ease-in-out;
+
+        @include tablet {
+            align-self: center;
+            padding: 20rem 40rem;
+        }
 
         p {
             font-family: var(--font-family);

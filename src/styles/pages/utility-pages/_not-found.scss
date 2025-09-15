@@ -16,19 +16,24 @@
       gap: initial;
     }
 
+    @include desktop-for-eco_friendly {
+      padding: 120rem 20rem;
+    }
+
     @include desktop-small {
       display: flex;
-      flex-direction: column;
+      padding: 60rem 20rem;
     }
   }
 
   &__img {
     img {
       width: 100%;
+      @include desktop-small {
+        max-height: 400rem;
+      }
     }
-    @media screen and (max-width:1136px) {
-      display: none;
-    }
+
     @include mobile {
       display: none;
     }
@@ -47,8 +52,10 @@
     line-height: 100%;
     color: #8FA8A8;
 
+    @include desktop-small {
+      font-size: 200rem;
+    }
     @include tablet-small {
-      // display: flex;
       padding: 20rem;
     }
 
@@ -63,14 +70,16 @@
     font-weight: 800;
     font-size: 70rem;
     color: var(--dark-green-color);
-
+    @include desktop-small {
+      font-size: 60rem;
+    }
   }
 
-  @include mobile {
-    font-weight: 200;
-    font-size: 20rem;
 
-  }
+  // @include mobile {
+  //   font-weight: 200;
+  //   font-size: 20rem;
+  // }
 
   &__desc {
     font-family: var(--second-family);
@@ -112,15 +121,18 @@
     background: var(--dark-green-color);
     gap: 15rem;
     max-width: 275rem;
-
-    img {
-      max-width: 19rem;
+    
+    @include desktop-small {
+      align-self: center;
     }
-
     @include mobile {
       font-weight: 350;
       font-size: 20rem;
       padding: 20rem 35rem;
     }
+    img {
+      max-width: 19rem;
+    }
+
   }
 }

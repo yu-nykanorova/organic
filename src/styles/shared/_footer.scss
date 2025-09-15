@@ -6,6 +6,9 @@
   padding: 117rem 52rem 102rem 52rem;
   display: flex;
   justify-content: space-between;
+  @include desktop-small {
+    padding: 100rem 20rem 60rem 20rem;
+  }
   @include tablet {
     flex-direction: column;
     align-items: center;

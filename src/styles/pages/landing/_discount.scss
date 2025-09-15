@@ -2,24 +2,20 @@
 
 .discount {
   display: flex;
-  max-width: 1400px;
-  margin-inline: auto;
-  gap: 35px;
+  max-width: 1400rem;
+  margin: 154rem auto 0;
+  gap: 35rem;
   padding-inline: 20px;
-  margin-top: 154rem;
-  @media screen and (max-width: 1400px) {
-    justify-content: center;
-    gap: 35px;
-    align-items: center;
-  }
+
   @include desktop-small {
-    gap: 16px;
+    margin: 120rem auto 0;
+    gap: 16rem;
   }
   @include tablet-small {
     flex-direction: column;
   }
   @include mobile {
-    padding-inline: 10px;
+    padding-inline: 10rem;
   }
 
   &__item {
@@ -35,12 +31,25 @@
       left: 55rem;
       max-width: 264rem;
 
+      @include tablet {
+        top: initial;
+        bottom: 10rem;
+        left: 20rem;
+      }
+
       &-comment {
         margin-bottom: 5rem;
         font-family: var(--third-family);
         font-weight: 400;
         font-size: 36rem;
         color: var(--white);
+
+        @include desktop-small {
+          font-size: 28rem;
+        }
+        @include tablet {
+          font-size: 24rem;
+        }
       }
 
       &-desc {
@@ -48,6 +57,13 @@
         font-weight: 800;
         font-size: 40rem;
         color: var(--white);
+        
+        @include desktop-small {
+          font-size: 32rem;
+        }
+        @include tablet {
+          font-size: 28rem;
+        }
       }
     }
 

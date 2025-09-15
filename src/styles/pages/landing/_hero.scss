@@ -154,13 +154,17 @@
             flex-direction: column;
             justify-content: center;
         }
-        @include desktop-small {
-            padding: 120rem 70rem 80rem;
+        @include desktop-for-eco_friendly {
+            padding: 130rem 0 90rem 100rem;
             max-width: 700rem;  
-            text-align: center;          
         }
-        @include tablet-small {
-            padding: 80rem 50rem 50rem 50rem;
+        @include desktop-small {
+            max-width: 100%;
+            padding: 80rem 100rem 50rem 100rem;
+            text-align: center;
+        }
+        @include tablet {
+            padding: 80rem 50rem 0 50rem;
         }
         @include mobile {
             padding: 50rem 30rem 30rem 30rem;
@@ -186,6 +190,9 @@
         margin-bottom: 23rem;
         @include desktop-small {
             margin-bottom: 35rem;
+        }
+        @include tablet {
+            font-size: 60rem;
         }
         @include tablet-small {
             font-size: 56rem;
@@ -218,6 +225,11 @@
         }
         @include desktop-for-header {
             max-width: 45%;
+            justify-content: space-between;
+        }
+        @include desktop-small {
+            max-width: 250rem;
+            margin-inline: auto;
             justify-content: space-between;
         }
         @include tablet-small {
@@ -260,6 +272,11 @@
             object-position: left;
             @include desktop-small {
                 width: 100%;
+                object-position: top;
+                max-height: 500rem;
+            }
+            @include tablet {
+                max-height: 400rem;
             }
         }
     }

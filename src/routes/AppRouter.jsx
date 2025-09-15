@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { PageNotFound } from "../pages/utility_pages/not-found";
 
@@ -12,24 +12,27 @@ import { QualityStandartPage } from "../pages/quality-stan/quality_stan-main";
 import { ContactUsPage } from "../pages/contact/contact-main";
 import { NewsPage } from "../pages/news/news-main";
 import { NewsItem } from "../pages/news/news_item";
+import { UnderConstruction } from "../pages/utility_pages/under-construction";
 
 export const AppRoutes = () => {
     return (
-    <BrowserRouter>
-        <Routes>
-          <Route index={true} path="/" element={<Landing />} />
-          <Route index={true} path="/aboutus" element={<AboutUsPage />} />
-          <Route index={true} path="/team" element={<TeamPage />} />
-          <Route index={true} path="/shop" element={<ShopPage />} />
-          <Route index={true} path="/shop/shop-item/:id" element={<ShopItem />} />
-          <Route index={true} path="/news" element={<NewsPage />} />
-          <Route index={true} path="/news/:id" element={<NewsItem />} />
-          <Route index={true} path="/service" element={<ServicePage />} />
-          <Route index={true} path="/quality" element={<QualityStandartPage />} />
-          <Route index={true} path="/contact" element={<ContactUsPage />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-    </BrowserRouter>
+      <Routes>
+        <Route index={true} path="/" element={<Landing />} />
+        <Route index={true} path="/aboutus" element={<AboutUsPage />} />
+        <Route index={true} path="/team" element={<TeamPage />} />
+        <Route index={true} path="/shop" element={<ShopPage />} />
+        <Route index={true} path="/shop/shop-item/:id" element={<ShopItem />} />
+        <Route index={true} path="/news" element={<NewsPage />} />
+        <Route index={true} path="/news/:id" element={<NewsItem />} />
+        <Route index={true} path="/service" element={<ServicePage />} />
+        <Route index={true} path="/quality" element={<QualityStandartPage />} />
+        <Route index={true} path="/contact" element={<ContactUsPage />} />
+        <Route path="/style-guide" element={<UnderConstruction />} />
+        <Route path="/password-protected" element={<UnderConstruction />} />
+        <Route path="/licences" element={<UnderConstruction />} />
+        <Route path="/changelog" element={<UnderConstruction />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     )
   }
   

@@ -3,6 +3,13 @@
 .team {
     padding: 150rem 0 120rem 0;
 
+    @include desktop-for-eco_friendly {
+        padding: 120rem 0;
+    }
+    @include desktop-small {
+        padding: 80rem 0;
+    }
+
     &__container {
         max-width: 1400rem;
         margin: auto;

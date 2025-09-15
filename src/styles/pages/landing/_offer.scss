@@ -6,9 +6,12 @@
   background: var(--dark-green-color);
   padding: 200rem 20rem;
 
+  @include desktop-for-eco_friendly {
+    padding: 120rem 20rem;
+  }
+
   @include tablet-small {
-    padding-top: 100rem;
-    padding-bottom: 100rem;
+    padding: 100rem 20rem;
   }
 
   &__info {
@@ -36,6 +39,10 @@
       color: var(--green-color);
       font-weight: 400;
       font-size: 36rem;
+      
+      @include tablet {
+        text-align: center;
+      }
     }
   
     &-desc {

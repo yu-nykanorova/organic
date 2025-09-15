@@ -1,7 +1,8 @@
 @use '../../utils/mixins' as *;
 
 .organicService {
-  background: url(src/assets/img/service/backgroundservice.jpg);
+  background-image: url(src/assets/img/service/backgroundservice.jpg);
+  background-position: bottom;
 }
 
 .organicOnly {
@@ -9,8 +10,12 @@
   padding-bottom: 538rem;
   text-align: center;
 
+  @include desktop-for-eco_friendly {
+    padding: 150rem 20rem 300rem 20rem;
+  }
+
   @include tablet-small {
-    padding-bottom: 430rem;
+    padding: 120rem 20rem 280rem 20rem;
   }
 
   &__title {

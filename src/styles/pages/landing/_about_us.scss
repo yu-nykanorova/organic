@@ -10,11 +10,17 @@
     padding: 120rem 80rem 130rem 100rem;
     margin-top: 203rem;
 
+    @include desktop-for-eco_friendly {
+      margin-top: 150rem;
+      padding: 100rem 80rem;
+    }
+
     @include desktop-small {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 90rem 30rem;
+      margin-top: 120rem;
+      padding: 0 20rem;
 
     }
   }
@@ -22,16 +28,30 @@
   &__img {
     display: flex;
     max-width: 911rem;
+
+    @include desktop-small {
+      width: 100%;
+      max-width: initial;
+      max-height: 400rem;
+    }
+    @include tablet {
+      max-width: auto;
+      max-height: 300rem;
+    }
    
     img {
+      object-fit: cover;
       width: 100%;
       transform: scale(1.05) translateX(30rem);
+
+      @include desktop-small {
+        width: 100%;
+        max-width: initial;
+        max-height: 400rem;
+        transform: initial;
+      }
     }
 
-    @include tablet {
-      padding: 20rem;
-      max-width: auto;
-    }
   }
 
   &__box {
@@ -39,6 +59,8 @@
     @include desktop-small {
       padding: 20rem;
       margin-inline: auto;
+      max-width: initial;
+      width: 100%;
     }
   }
 
@@ -51,6 +73,7 @@
 
     @include desktop-small {
       font-size: 32rem;
+      text-align: center;
     }
 
     @include mobile {
@@ -66,6 +89,7 @@
 
     @include desktop-small {
       font-size: 46rem;
+      text-align: center;
     }
 
     @include desktop-small {
@@ -85,6 +109,10 @@
     margin-top: 46rem;
     max-width: 564rem;
 
+    @include tablet {
+      margin: 20rem 0;
+    }
+
     @include mobile {
       flex-direction: column;
     }
@@ -96,6 +124,9 @@
     background: var(--white);
     margin-right: 19rem;
 
+    @include tablet {
+      padding: 20rem;
+    }
     @include mobile {
       padding: 15rem;
       margin-bottom: 20rem;
@@ -130,6 +161,14 @@
     font-size: 20rem;
     border: 0;
     margin-top: 46rem;
+
+    @include desktop-small {
+      margin-inline: auto;
+    }
+    @include desktop-small {
+      margin-top: 20rem;
+      padding: 20rem 40rem;
+    }
 
     .arrow-box {
       display: flex;

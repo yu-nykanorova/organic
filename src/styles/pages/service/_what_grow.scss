@@ -5,6 +5,9 @@
     background: var(--gray-color-third);
     text-align: center;
     padding: 201rem 260rem;
+    @include desktop-for-eco_friendly {
+        padding: 120rem 180rem;
+    }
     @include desktop-small {
         padding: 100rem 150rem;
     }
@@ -65,6 +68,9 @@
             gap: 39rem;
             padding: 65rem 0 100rem 0;
             flex-shrink: 0.2;
+            @include desktop-for-eco_friendly {
+                padding: 40rem 0 80rem 0;
+            }
             @include desktop-small {
                 padding: 30rem 0 60rem 0;
             }
@@ -169,9 +175,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 60%;
+            width: 100%;
             img {
-                width: 100%;
+                width: auto;
+                max-height: 400rem;
             }
         }
     }
@@ -188,6 +195,10 @@
         gap: 7rem;
         margin-top: 80rem;
         transition: .2s all ease-in-out;
+
+        @include desktop-for-eco_friendly {
+            margin-top: 60rem;
+        }
 
         &:hover {
             transform: scale(1.05);
