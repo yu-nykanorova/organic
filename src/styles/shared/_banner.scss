@@ -9,6 +9,10 @@
 
     img {
         width: 100%;
+        @include mobile {
+            object-fit: cover;
+            height: 150rem;
+        }
     }
 }
 

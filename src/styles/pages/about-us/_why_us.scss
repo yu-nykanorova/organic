@@ -8,8 +8,14 @@
     @include desktop-for-eco_friendly {
         padding: 140rem 20rem;
     }
-    @include desktop-small{
+    @include desktop-small {
         padding: 100rem 20rem;
+    }
+    @include tablet-small {
+        padding: 80rem 20rem 60rem;
+    }
+    @include mobile {
+        padding: 60rem 10rem 30rem;
     }
     &__main{
         display: flex;
@@ -51,8 +57,11 @@
                 @include tablet {
                     font-size: 46rem;
                 }
+                @include tablet-small {
+                    font-size: 36rem;
+                }
                 @include mobile {
-                    font-size: 32rem;
+                    font-size: 28rem;
                 }
 
             }
@@ -95,12 +104,18 @@
                 max-width: 339rem;
                 background-color: #ececec;
                 margin-bottom: 12rem;
-                @include desktop-small{
+                @include desktop-small {
                     margin: auto;
                     padding: 23rem 85rem 23rem 21rem;
                 }
-                @include tablet-small{
-                    max-width: 220rem;
+                @include tablet-small {
+                    max-width: 80%;
+                    padding: 22rem 40rem;
+                    margin: 0 auto 10rem;
+                }
+                @include mobile {
+                    max-width: 100%;
+                    padding: 15rem 20rem;
                 }
                 &-icon{
                     color: var(--green-color);
@@ -172,6 +187,10 @@
                 @include tablet {
                     flex: 0 0 calc((100% - 10rem) / 2);
                 }
+                @include mobile {
+                    max-width: initial;
+                    flex: 0 0 100%;
+                }
                 
                 &-icon{
                     display: flex;
@@ -196,6 +215,11 @@
                         color: var(--black-color); 
                         max-width: 184rem;
                         margin-bottom: 30rem;
+
+                        @include mobile {
+                            max-width: 100%;
+                            margin-bottom: 10rem;
+                        }
                     }
                     display: flex;
                     justify-content: center;

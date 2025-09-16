@@ -15,6 +15,10 @@
     gap: 30rem;
     padding: 58rem 26rem 51rem 26rem;
   }
+  @include mobile {
+    gap: 20rem;
+    padding: 60rem 10rem;
+  }
   &-title {
     font-weight: 700;
     font-size: 30rem;
@@ -25,7 +29,6 @@
     flex-direction: column;
     text-align: right;
     max-width: 285rem;
-    width: 100%;
     border-right: var(--border);
     padding-right: 52rem;
     padding-bottom: 36rem;
@@ -33,6 +36,10 @@
       text-align: center;
       border-right: 0;
       padding: 0;
+    }
+    @include mobile {
+      max-width: initial;
+      width: 100%;
     }
     &__title {
       margin-bottom: 32rem;
@@ -67,6 +74,11 @@
     flex-direction: column;
     align-items: center;
     padding: 0 20rem;
+
+    @include mobile {
+      padding: 0;
+    }
+
     &__logo {
       font-family: var(--font-family);
       font-weight: 700;
@@ -77,9 +89,24 @@
       align-items: center;
       gap: 8rem;
       margin-bottom: 26rem;
+      
+      @include tablet-small {
+        font-size: 28rem;
+      }
+      @include mobile {
+        font-size: 26rem;
+      }
+      
       & img {
         width: 39rem;
         height: 56rem;
+        @include tablet-small {
+          width: 26rem;
+          height: auto;
+        }
+        @include mobile {
+          width: 24rem;
+        }
       }
     }
     &__desc {
@@ -97,6 +124,10 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 15rem;
+
+      @include mobile {
+        width: 100%;
+      }
 
       a {
         display: inline-flex;
@@ -121,16 +152,23 @@
     padding-left: 50rem;
     padding-bottom: 34rem;
     max-width: 285rem;
-    width: 100%;
     @include tablet {
       text-align: center;
       border-left: none;
       padding: 0;
     }
+    @include mobile {
+      max-width: initial;
+      width: 100%;
+    }
     &__title {
       margin-bottom: 24rem;
+      @include tablet-small {
+        font-size: 28rem;
+      }
       @include mobile {
         margin-bottom: 15rem;
+        font-size: 26rem;
       }
     }
     &__link {

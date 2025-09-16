@@ -11,7 +11,7 @@
         max-height: 444rem;
     }
     @include mobile {
-        max-width: 357rem;
+        max-width: 100%;
         max-height: 324rem;
     }
     
@@ -35,8 +35,8 @@
         @include mobile {
             width: 62rem;
             height: 62rem;
-            top: 33rem;
-            left: 27rem;
+            top: 10rem;
+            left: 10rem;
         }
 
         p {
@@ -46,6 +46,12 @@
             font-size: 25rem;
             text-align: center;
             line-height: 20rem;
+
+            @include tablet-small {
+                font-size: 20rem;
+                font-weight: 700;
+                line-height: initial;
+            }
         }
 
         span {
@@ -74,8 +80,10 @@
             bottom: -20rem;
         }
         @include mobile {
-            max-width: 233rem;
-            max-height: 180rem;
+            max-width: initial;
+            max-height: 220rem;
+            padding: 10rem;
+            bottom: 0;
         }
 
         &.card-info-news {
@@ -154,6 +162,9 @@
             }
             @include tablet {
                 padding: 20rem 40rem;
+            }
+            @include tablet-small {
+                padding: 16rem 30rem;
             }
             @include mobile {
                 padding: 8rem 14rem;

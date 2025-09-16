@@ -21,6 +21,10 @@
         font-size: 36rem;
         color: var(--green-color);
         margin-bottom: 8rem;
+
+        @include mobile {
+            font-size: 30rem;
+        }
     }
 
     &__title {
@@ -32,10 +36,10 @@
         text-align: center;
         color: var(--dark-green-color);
         @include tablet-small {
-            font-size: 46rem;
+            font-size: 42rem;
         }
         @include mobile {
-            font-size: 42rem;
+            font-size: 32rem;
         }
     }
 
@@ -198,6 +202,13 @@
 
         @include desktop-for-eco_friendly {
             margin-top: 60rem;
+        }
+        @include tablet-small {
+            padding: 20rem 30rem;
+        }
+        @include mobile {
+            margin-top: 20rem;
+            padding: 15rem 20rem;
         }
 
         &:hover {

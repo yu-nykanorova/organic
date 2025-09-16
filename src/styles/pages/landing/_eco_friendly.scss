@@ -8,7 +8,10 @@
 
     @include tablet {
         flex-direction: column;
-      }
+    }
+    @include mobile {
+        margin-top: 60rem;
+    }
   
     &__photo {
         max-width: 952rem;
@@ -16,6 +19,9 @@
 
         @include desktop-for-eco_friendly {
             max-width: 850rem;
+        }
+        @include mobile {
+            height: 600rem;
         }
     }
   
@@ -40,6 +46,11 @@
         top: 20%;
         padding: 30rem;
       }
+
+      @include tablet-small {
+        top: 10%;
+        padding: 20rem;
+      }
     }
   
     &__header {
@@ -50,6 +61,9 @@
       margin-bottom: 8rem;
       @include desktop-for-eco_friendly{
         font-size: 32rem;
+      }
+      @include tablet-small{
+        font-size: 30rem;
       }
       @include mobile{
         font-size: 26rem;

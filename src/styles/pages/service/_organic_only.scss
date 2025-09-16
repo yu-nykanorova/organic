@@ -17,6 +17,9 @@
   @include tablet-small {
     padding: 120rem 20rem 280rem 20rem;
   }
+  @include mobile {
+    padding: 80rem 10rem 160rem 10rem;
+  }
 
   &__title {
     font-family: var(--third-family);
@@ -25,7 +28,7 @@
     color: var(--green-color);
 
     @include mobile {
-      font-size: 30rem;
+      font-size: 26rem;
     }
   }
 
@@ -73,5 +76,9 @@
     border: none;
     color: inherit;
     cursor: pointer;
+
+    @include mobile {
+      padding: 20rem 19rem 19rem 23rem;
+    }
   }
 }

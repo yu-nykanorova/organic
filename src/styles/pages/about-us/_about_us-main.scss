@@ -11,5 +11,8 @@
 
     &__newsletter {
         margin-top: 141rem;
+        @include mobile {
+            margin-top: 80rem;
+        }
     }
 }

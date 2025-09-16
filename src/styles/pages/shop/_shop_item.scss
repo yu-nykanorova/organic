@@ -98,6 +98,7 @@
     @include tablet-small {
         flex-wrap: wrap;
         row-gap: 20rem;
+        justify-content: space-between;
     }
 
     label{
@@ -116,6 +117,10 @@
         -moz-border-radius: 16rem;
         -ms-border-radius: 16rem;
         -o-border-radius: 16rem;
+
+        @include tablet-small {
+            padding: 18rem 20rem;
+        }
 
         &::placeholder{
             color: var(--dark-green-color);
@@ -164,6 +169,10 @@
     -ms-transition: ease-in-out 1s;
     -o-transition: ease-in-out 1s;
 
+    @include tablet-small {
+        padding: 20rem 30rem;
+    }
+
     &:hover{
         background-color: var(--white);
         color: var(--dark-green-color);
@@ -205,6 +214,7 @@
 
     @include tablet-small {
         height: 270rem;
+        margin: 0 auto 80rem;
     }
 
     @include mobile-for-shop_items {
@@ -214,10 +224,6 @@
 }
 
 .shop__item_info-btn {
-
-    @include tablet-small {
-        height: 70rem;
-    }
 
     @include mobile-for-shop_items {
         height: 150rem;
@@ -255,7 +261,8 @@
     @include tablet-small {
         margin: 5rem;
         padding: 18rem 10rem;
-        font-size: 14rem;
+        font-weight: 400;
+        font-size: 18rem;
         height: 70rem;
         width: 180rem;
     }
@@ -289,7 +296,8 @@
     @include tablet-small {
         margin: 5rem;
         padding: 18rem 10rem;
-        font-size: 16rem;
+        font-weight: 400;
+        font-size: 18rem;
         height: 70rem;
         width: 180rem;
     }
@@ -357,6 +365,11 @@
         color: var(--dark-green-color);
         text-align: center;
         margin-bottom: 50rem;
+
+        @include tablet-small {
+            margin-bottom: 30rem;
+            font-size: 36rem;
+        }
     }
 }
 

@@ -7,7 +7,10 @@
         padding: 120rem 0;
     }
     @include desktop-small {
-        padding: 80rem 0;
+        padding: 80rem 20rem;
+    }
+    @include mobile {
+        padding: 60rem 10rem;
     }
 
     &__container {
@@ -26,12 +29,25 @@
         font-size: 36rem;
         color: var(--green-color);
         text-align: center;
+
+        @include tablet-small {
+            font-size: 30rem;
+        }
+        @include mobile {
+            font-size: 26rem;
+        }
     }
 
     &__title {
         color: var(--dark-green-color);
         text-align: center;
         margin-bottom: 16rem;
+        @include tablet-small {
+            font-size: 36rem;
+        }
+        @include mobile {
+            font-size: 28rem;
+        }
     }
 
     &__desc {

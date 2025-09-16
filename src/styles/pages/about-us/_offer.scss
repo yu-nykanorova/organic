@@ -10,6 +10,12 @@
   @include desktop-small {
     padding: 120rem 20rem;
   }
+  @include tablet-small {
+    padding: 80rem 20rem;
+  }
+  @include mobile {
+    padding: 60rem 10rem;
+  }
 
   &__info {
     text-align: center;
@@ -20,14 +26,23 @@
       font-size: 36rem;
       color: var(--green-color);
       padding-bottom: 8rem;
+      @include tablet-small {
+        font-size: 30rem;
+      }
+      @include mobile {
+        font-size: 26rem;
+      }
     }
   
     &-description {
       color: var(--white);
       padding-bottom: 33rem;
   
+      @include tablet-small {
+        font-size: 36rem;
+      }
       @include mobile {
-        font-size: 35rem;
+        font-size: 28rem;
       }
     }
   }  

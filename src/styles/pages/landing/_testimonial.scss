@@ -13,7 +13,7 @@ $testimonialBgImage: "/img/testimonial_bg.png";
   background-repeat: no-repeat; 
 
   @include desktop-for-eco_friendly {
-    padding-top: 80rem;
+    padding: 80rem 20rem;
   }
 
   &__pretitle {
@@ -22,6 +22,12 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     font-size: 36rem;
     color: var(--green-color);
     margin-bottom: 8rem;
+    @include tablet-small {
+      font-size: 30rem;
+    }
+    @include mobile {
+      font-size: 26rem;
+    }
   }
   &__title {
     font-weight: 800;
@@ -32,6 +38,13 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     @include tablet {
       padding-left: 40rem;
       padding-right: 40rem;
+    }
+    @include tablet-small {
+      font-size: 36rem;
+    }
+    @include mobile {
+      font-size: 28rem;
+      padding: 0 10rem;
     }
   }
 
@@ -64,12 +77,17 @@ $testimonialBgImage: "/img/testimonial_bg.png";
       padding: 60rem 0;
       gap: 40rem;
     }
+    @include tablet-small {
+      padding: 30rem 0;
+      grid-template-rows: initial;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20rem;
+      column-gap: 30rem;
+    }
 
     @include mobile {
       grid-column-gap: 32rem;
       grid-row-gap: 32rem;
-      padding-top: 60rem;
-      padding-bottom: 100rem;
     }
   }
 
@@ -116,14 +134,22 @@ $testimonialBgImage: "/img/testimonial_bg.png";
   align-items: center;
 
   @include tablet {
-    padding-left: 40rem;
-    padding-right: 40rem;
+    padding-inline: 40rem;
+  }
+  @include tablet-small {
+    padding: 20rem 40rem;
+  }
+  @include mobile {
+    padding: 10rem;
   }
 
   &__img {
     max-width: 115rem;
     margin-bottom: 20rem;
     border-radius: 100%;
+    @include mobile {
+      max-width: 80rem;
+    }
   }
   &__rating {
     margin-bottom: 25rem;
@@ -186,11 +212,6 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     width: 128rem;
     height: 128rem;
   }
-
-  // @include mobile {
-  //   width: 122rem;
-  //   height: 122rem;
-  // }
 }
 
 .inner-circle {
@@ -211,11 +232,6 @@ $testimonialBgImage: "/img/testimonial_bg.png";
     width: 115rem;
     height: 115rem;
   }
-
-  // @include mobile {
-  //   width: 109rem;
-  //   height: 109rem;
-  // }
 }
 .testimonial__slider-container {
   position: relative;
@@ -225,5 +241,8 @@ $testimonialBgImage: "/img/testimonial_bg.png";
   @include desktop-small {
     width: 100%;
     padding: 0 20rem;
+  }
+  @include tablet-small {
+    padding: 0 10rem;
   }
 }

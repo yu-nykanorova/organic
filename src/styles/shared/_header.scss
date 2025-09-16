@@ -21,7 +21,7 @@
   }
 
   @include mobile {
-    padding: 20rem;
+    padding: 20rem 10rem 10rem 10rem;
   }
 
   &__backdrop {
@@ -60,6 +60,10 @@
 
     @include tablet-small {
       font-size: 28rem;
+      align-self: center;
+    }
+    @include mobile {
+      font-size: 26rem;
     }
 
     & img {
@@ -68,6 +72,10 @@
 
       @include tablet-small {
         width: 26rem;
+        height: auto;
+      }
+      @include mobile {
+        width: 24rem;
       }
     }
   }
@@ -130,6 +138,9 @@
     @include desktop-small {
       font-size: 30rem;
     }
+    @include tablet-small {
+      font-size: 24rem;
+    }
 
     &:hover {
       color: var(--green-color-second);
@@ -141,8 +152,8 @@
     align-items: center;
     gap: 18rem;
 
-    @include mobile {
-      gap: 5rem;
+    @include tablet-small {
+      width: 100%;gap: 5rem;
       justify-content: space-between;
     }
   }
@@ -160,18 +171,12 @@
     @include desktop-for-eco_friendly {
       width: 230rem;
     }
-
     @include desktop-small {
       width: 300rem;
     }
-
     @include tablet {
       width: initial;
     }
-
-    // @include mobile {
-    //   width: 60%;
-    // }
 
     &__input {
       border: 0;
@@ -183,6 +188,10 @@
       font-weight: 700;
       font-size: 16rem;
       color: var(--green-color);
+
+      @include tablet-small {
+        padding: 5rem;
+      }
     }
     
     &__btn {
@@ -199,6 +208,9 @@
 
       @include desktop-small {
         padding: 13rem;
+      }
+      @include mobile {
+        padding: 10rem;
       }
     }
 
@@ -220,7 +232,7 @@
 
     @include mobile {
       outline: 0;
-      padding: 5rem;
+      padding: 2rem;
     }
 
     &__group {
@@ -233,6 +245,9 @@
 
       @include desktop-small {
         padding: 13rem;
+      }
+      @include mobile {
+        padding: 10rem;
       }
     }
 

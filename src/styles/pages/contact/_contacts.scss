@@ -17,6 +17,9 @@
     flex-direction: column;
     align-items: center;
   }
+  @include mobile {
+    margin-top: 60rem;
+  }
 
   p {
     line-height: normal;
@@ -48,6 +51,9 @@
       width: 65%;
       align-items: center;
       margin-inline: auto;
+    }
+    @include mobile {
+      width: 100%;
     }
 
     &-title {
@@ -101,6 +107,10 @@
           max-width: 552rem;
           padding: 12rem 46rem 12rem 12rem;
         }
+        @include mobile {
+          max-width: 100%;
+          padding: 12rem;
+        }
 
         &:hover {
           box-shadow: 0 12rem 19rem 0 rgba(201, 201, 201, 0.25);
@@ -118,6 +128,10 @@
             width: 89rem;
             height: 89rem;
           }
+          @include mobile {
+            width: 60rem;
+            height: 60rem;
+          }
         
           img {
             max-width: 100%;
@@ -128,7 +142,10 @@
             border-radius: 11rem;
 
             @include tablet {
-              padding: 26rem;
+              padding: 24rem;
+            }
+            @include mobile {
+              padding: 10rem;
             }
           }
         }
@@ -144,6 +161,9 @@
             }
             @include tablet {
               font-size: 25rem;
+            }
+            @include mobile {
+              font-size: 20rem;
             }
           }
           span {

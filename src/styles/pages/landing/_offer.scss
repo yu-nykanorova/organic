@@ -9,9 +9,11 @@
   @include desktop-for-eco_friendly {
     padding: 120rem 20rem;
   }
-
   @include tablet-small {
-    padding: 100rem 20rem;
+    padding: 80rem 20rem;
+  }
+  @include mobile {
+    padding: 60rem 10rem;
   }
 
   &__info {
@@ -43,13 +45,23 @@
       @include tablet {
         text-align: center;
       }
+      @include tablet-small {
+        font-size: 30rem;
+      }
+      @include mobile {
+        font-size: 26rem;
+      }
     }
   
     &-desc {
       color: var(--white);
   
+      @include tablet-small {
+        font-size: 36rem;
+        text-align: center;
+      }
       @include mobile {
-        font-size: 40rem;
+        font-size: 28rem;
       }
     }
   }
@@ -64,15 +76,22 @@
       display: inline-flex;
       gap: 10rem;
       align-items: center;
-  
       border-radius: 16rem;
       padding: 28rem 39rem;
-      background: var(--yelow-color);
-  
+      background: var(--yelow-color); 
       font-family: var(--font-family);
       font-weight: 700;
       font-size: 20rem;
       color: var(--dark-green-color);
+      
+      @include tablet-small {
+        padding: 20rem 30rem;
+      }
+      @include mobile {
+        padding: 15rem 20rem;
+        font-weight: 500;
+        font-size: 18rem;
+      }
     }
   
     &-arrow {

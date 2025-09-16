@@ -15,10 +15,12 @@
 
     @include tablet {
         margin-top: 80rem;
+        padding: 0 0 30rem;
     }
 
     @include mobile {
-        padding: 96rem 0 100rem;
+        margin-top: 30rem;
+        padding: 30rem 0 40rem;
     }
 
     &__uptitle {
@@ -28,6 +30,13 @@
         font-weight: 400;
         font-size: 36rem;
         margin-bottom: 8rem;
+
+        @include tablet-small {
+            font-size: 30rem;
+        }
+        @include mobile {
+            font-size: 26rem;
+        }
     }
 
     h2 {
@@ -35,8 +44,13 @@
         text-align: center;
         margin-bottom: 40rem;
 
+        @include tablet-small {
+            font-size: 36rem;
+            margin-bottom: 30rem;
+        }
         @include mobile {
-            margin-bottom: 50rem;
+            font-size: 28rem;
+            margin-bottom: 20rem;
         }
     }
     
@@ -76,9 +90,14 @@
         @include desktop-for-eco_friendly {
             margin-top: 80rem;
         }
-    
+        @include tablet-small {
+            padding: 20rem 30rem;
+            margin-top: 30rem;
+        }
         @include mobile {
-            margin: 76rem auto 0;
+            padding: 15rem 20rem;
+            font-size: 18rem;
+            font-weight: 400;
         }
     
         &:hover {

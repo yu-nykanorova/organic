@@ -24,6 +24,9 @@
         width: 250rem;
         height: 400rem;
     }
+    @include mobile {
+        height: 340rem;
+    }
 
     &:hover {
         transform: translateY(-1rem);
@@ -59,6 +62,11 @@
         -moz-border-radius: 8rem;
         -ms-border-radius: 8rem;
         -o-border-radius: 8rem;
+
+        @include mobile {
+            top: 20rem;
+            left: 20rem;
+        }
     }
 
     &__panel {
@@ -70,6 +78,10 @@
 
         @include desktop-small {
             margin-top: 299rem;
+        }
+        @include mobile {
+            margin-top: initial;
+            padding: 0 20rem;
         }
 
         &-bottom {

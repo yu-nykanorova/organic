@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import heroDishImage from '../../assets/img/hero/hero_dish.png';
 import heroDecorFigs from '../../assets/img/hero/hero_decor_figs.svg';
 import heroDecorLeaves1 from '../../assets/img/hero/hero_decor_leaves_1.svg';
@@ -14,14 +15,14 @@ export const HeroLanding = () => {
             <div className="hero__info">
               <div className="hero__slogan">100% Natural Food</div>
               <div className="hero__title">Choose the best healthier way of life</div>
-              <div className="hero__button">
+              <Link className="hero__button" to="/shop">
                 <p className="btn-text">Explore Now</p>
                 <div className="btn-arrow">
                   <svg width="1em" height="1em" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.47641 1.12891L7.87095 4.19342L4.47641 7.25794M7.39949 4.19342H0.516113" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="hero__image">
               <img src={heroDishImage} alt="Hero Dish" />

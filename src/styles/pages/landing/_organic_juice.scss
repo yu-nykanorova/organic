@@ -7,17 +7,22 @@
     @include desktop-for-header {
         padding: 150rem 0;
     }
-
     @include tablet {
         padding: 100rem 0;
+    }
+    @include mobile {
+        padding: 60rem 0;
     }
 
     &-items {
         display: flex;
         gap: 42rem;
         justify-content: space-between;
-        @include desktop-small{
+        @include desktop-small {
             flex-direction: column;
+        }
+        @include mobile {
+            gap: 20rem;
         }
     }
 
@@ -32,6 +37,12 @@
         @include tablet {
             height: 400rem;
         }
+        @include tablet-small {
+            height: 300rem;
+        }
+        @include mobile {
+            height: 200rem;
+        }
         &__title {
             padding: 34rem 83rem;
             background: var( --white);
@@ -41,9 +52,13 @@
             font-size: 25rem;
             color: var(--dark-green-color);
 
+            @include tablet-small {
+                padding: 30rem 50rem;
+                font-size: 22rem;
+            }
             @include mobile {
-                padding: 24rem 58rem;
-                font-size: 20rem;
+                padding: 20rem 40rem;
+                font-size: 18rem;
             }
         }
     }

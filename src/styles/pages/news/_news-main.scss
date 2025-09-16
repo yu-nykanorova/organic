@@ -6,6 +6,12 @@
     &__news-container {
         padding: 0 60rem;
         margin-inline: auto;
+        @include tablet-small {
+            padding: 0 20rem;
+        }
+        @include mobile {
+            padding: 0 10rem;
+        }
     }
 
     &__news-list {
@@ -15,6 +21,15 @@
         display: grid;
         gap: 46rem;
         grid-template-columns: repeat(2, auto);
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+        @include tablet-small {
+            margin: 80rem auto 0;
+        }
+        @include mobile {
+            margin: 60rem auto 0;
+        }
     }
 
     &__news-item-card {

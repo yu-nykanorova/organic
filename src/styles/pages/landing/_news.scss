@@ -8,14 +8,15 @@
     @include desktop-for-header {
         padding-inline: 20rem;
     }
-
     @include desktop-for-eco_friendly {
         padding: 120rem 20rem 200rem;
     }
-
     @include tablet {
         padding: 80rem 20rem 120rem;
         text-align: center;
+    }
+    @include mobile {
+        padding: 60rem 10rem 100rem;
     }
 
     &__row {
@@ -38,8 +39,8 @@
         color: var(--green-color);
         margin-bottom: 8rem;
 
-        @include mobile {
-            text-align: center;
+        @include tablet-small {
+            font-size: 30rem;
         }
     }
 
@@ -47,6 +48,9 @@
         max-width: 902rem;
         color: var(--dark-green-color);
 
+        @include tablet-small {
+            font-size: 36rem;
+        }
     }
 
     &__btn {
@@ -62,6 +66,9 @@
         @include tablet {
             align-self: center;
             padding: 20rem 40rem;
+        }
+        @include mobile {
+            padding: 15rem 20rem;
         }
 
         p {
@@ -81,6 +88,10 @@
 
         @include desktop-for-header {
             grid-template-columns: repeat(auto-fill, minmax(450rem, 1fr));
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+            gap: 100rem;
         }
     }
 
