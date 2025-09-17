@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import Logo from "../assets/logo.svg";
 import Search from "../assets/img/header/search.svg";
 import Cart from "../assets/img/header/cart.svg";
-import DownArrow from "../assets/img/header/arrow.svg";
+import { DownArrowIcon } from "./icons/downArrowIcon";
+//import DownArrow from "../assets/img/header/arrow.svg";
 
 export const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -82,7 +83,7 @@ export const Header = () => {
           >
             <span className="header__a pages-link">
               Pages
-              <img className="arrow-icon" src={ DownArrow } alt="arrow" />
+              <DownArrowIcon className="arrow-icon" />
             </span>
             {(pagesDropdownActive || pagesDropdownHovered) && (
               <ul className="dropdown">

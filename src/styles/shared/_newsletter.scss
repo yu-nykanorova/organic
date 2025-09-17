@@ -95,11 +95,10 @@ $newsletterBgImage: "/img/newsletter_bg.jpg";
     }
 
     &__icon {
-      width: 15rem;
-      height: 15rem;
+      width: 17rem;
       display: none;
       @include tablet {
-        display: inline;
+        display: block;
       }
     }
 

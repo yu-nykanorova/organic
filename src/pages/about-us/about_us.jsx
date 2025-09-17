@@ -27,21 +27,20 @@ export const AboutUsAboutUs = () => {
           1500s, when an unknown printer took a galley.
         </p>
 
-        <div className="about_us__item">
-          <div className="about_us__icon">
-            <img src={Tractor} alt="vegan food" />
-          </div>
-          <div className="about_us__smalldesc">
-            {" "}
-            <h6 className="about_us__smalltitle">
+        <div className="about_us__advantage">
+          <div className="about_us__advantage-item">
+            <div className="about_us__advantage-item-icon">
+              <img src={Tractor} alt="tractor picture" />
+            </div>
+            <h6 className="about_us__advantage-item-smalltitle">
               Modern Agriculture Equipment
             </h6>
           </div>
-          <div className="about_us__icon">
-            <img src={Plant} alt="Mailbox" />{" "}
-          </div>
-          <div className="about_us__smalldesc">
-            <h6 className="about_us__smalltitle">
+          <div className="about_us__advantage-item">
+            <div className="about_us__advantage-item-icon">
+              <img src={Plant} alt="factory picture" />
+            </div>
+            <h6 className="about_us__advantage-item-smalltitle">
               No growth hormones are used
             </h6>
           </div>

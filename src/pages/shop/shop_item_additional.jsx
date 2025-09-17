@@ -7,11 +7,11 @@ export const ShopItemAdditional = () => {
     return (
       <div className="shop__item-additional">
         <h2>Related Products</h2>
-          <div className="shop__item-proposition">
-            {productList.map((item, index) => (
-                <ProductCard key={item.id || index} item={item} />
-            ))}
-          </div>
+        <div className="shop__item-proposition">
+          {productList.map((item, index) => (
+              <ProductCard key={item.id || index} item={item} />
+          ))}
+        </div>
       </div>
     )
   }

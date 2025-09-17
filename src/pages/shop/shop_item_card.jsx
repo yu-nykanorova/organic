@@ -26,10 +26,10 @@ export const ShopItemCard = () => {
                         <div className='shop__item-form'>
                             <div>
                                 <label>Quantity :</label>
-                                <input className='shop__form-input' type='number' placeholder='1' min='1' max='100' />
+                                <input className='shop__item-form-input' type='number' placeholder='1' min='1' max='100' />
                             </div>
                             <div>
-                                <button className='shop__item-button'>Add To Cart<span><ArrowIcon /></span></button>
+                                <button className='shop__item-form-button'>Add To Cart<span><ArrowIcon /></span></button>
                             </div>
                         </div>
                     </form>

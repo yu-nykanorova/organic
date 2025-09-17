@@ -36,9 +36,16 @@
       justify-content: center;
     }
 
+    @include desktop-small {
+      max-height: 250rem;
+    }
+
     img {
       border-radius: 20rem;
       max-width: 100%;
+      @include desktop-small {
+        object-fit: cover;
+      }
     }
   }
 

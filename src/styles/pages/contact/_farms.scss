@@ -1,5 +1,5 @@
-$farmsBgImage: "src/assets/img/contacts/farms-bg.jpg";
 @use '../../utils/mixins' as *;
+$farmsBgImage: "/img/farms_bg.jpg";
 
 .farms {
     max-width: 1400rem;
@@ -19,8 +19,7 @@ $farmsBgImage: "src/assets/img/contacts/farms-bg.jpg";
         padding: 60rem 20rem;
     }
     @include tablet {
-        justify-content: center;
-        
+        justify-content: center; 
     }
 
     @include mobile {
@@ -34,7 +33,7 @@ $farmsBgImage: "src/assets/img/contacts/farms-bg.jpg";
         border-radius: 30rem;
 
         @include mobile {
-            padding: 30rem 35rem;
+            padding: 20rem;
         }
     }
 

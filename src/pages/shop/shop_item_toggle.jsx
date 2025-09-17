@@ -32,15 +32,15 @@ export const ShopItemToggle = () => {
 
     return(
             <div className='shop__item-info'>
-                <div className='shop__item_info-btn'>
+                <div className='shop__item-info-btn'>
                     <button
-                        className={`shop__item_info-btn1 ${activeContent === 'info.info' ? 'active' : ''}`}
+                        className={`shop__item-info-btn1 ${activeContent === 'info.info' ? 'active' : ''}`}
                         onClick={describeInfo}
                     >
                         Product Description
                     </button>
                     <button 
-                        className={`shop__item_info-btn2 ${activeContent === addInfo ? 'active' : ''}`}
+                        className={`shop__item-info-btn2 ${activeContent === addInfo ? 'active' : ''}`}
                         onClick={additionalInfo}
                     >
                         Additional Info
